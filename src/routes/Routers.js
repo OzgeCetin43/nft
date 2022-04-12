@@ -12,7 +12,7 @@ import Wallet from "../pages/Wallet";
 const Routers = () => {
   return (
     <Routes>
-        <Route path="/" element={<Navigate to="/home"/>}/>
+        <Route path="/nft/" element={<Navigate to="/home"/>}/>
         <Route path="/home" element={<Home/>}/>
         <Route path="/createNft" element={<CreateNft/>}/>
         <Route path="/market" element={<Market/>}/>
