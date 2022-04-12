@@ -159,6 +159,67 @@
     margin-bottom: 5px;
 }
 
+.popular-works {
+    color: #fff;
+    width: 100%;
+    margin: 50px 0 100px;
+}
+
+.popular-works .title {
+    font-size: 3rem;
+    color: #d5f667;
+    padding: 20px;
+    line-height: 2;
+    text-align: center;
+}
+
+.popular-works .description {
+    color: #fff;
+    width: 30%;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.popular-works .trends {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
+
+.popular-works .trends .trend-item {
+    background-color: #1c2124;
+    width: 20%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 4px;
+}
+
+.popular-works .trends .trend-item img {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.popular-works .trends .trend-item .creator {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.popular-works .trends .trend-item .creator .creator-image {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.popular-works .trends .trend-item .creator .creator-name {
+    padding: 0px 10px;
+    color: #d3cfc8;
+}
+
 @media(max-width: 912px) {
     .hero-container {
         flex-direction: column-reverse;
@@ -187,6 +248,10 @@
         flex-direction: column;
     }
 
+    .hero-container .left .bid-and-auction .current-bid .bid-eth {
+        font-size: 1.75rem
+    }
+
     .hero-container .left .bid-and-auction .auction .timer .time-container {
         margin-right: 10px;
     }
@@ -203,5 +268,14 @@
         flex-direction: row;
         height: auto;
         margin: 20px 0;
+    }
+
+    .popular-works .title {
+        font-size: 2rem;
+    }
+
+    .popular-works .description {
+        font-size: 0.9rem;
+        width: 90%;
     }
 }
