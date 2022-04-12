@@ -16,16 +16,16 @@ const Footer = () => {
           <h4 className="title">My Account</h4>
           <ul className="my-account-links">
             <li className="my-account-link-item">
-              <i class="ri-arrow-right-s-fill right-arrow"></i><NavLink className="my-account-link" to="/createNft">Create Nft</NavLink>
+              <i class="ri-arrow-right-s-fill right-arrow"></i><NavLink className="my-account-link" to="/nft/createNft">Create Nft</NavLink>
             </li>
             <li className="my-account-link-item">
-              <i class="ri-arrow-right-s-fill right-arrow"></i><NavLink className="my-account-link" to="/profile">Profile</NavLink>
+              <i class="ri-arrow-right-s-fill right-arrow"></i><NavLink className="my-account-link" to="/nft/profile">Profile</NavLink>
             </li>
             <li className="my-account-link-item">
-              <i class="ri-arrow-right-s-fill right-arrow"></i><NavLink className="my-account-link" to="/editProfile">Edit Profile</NavLink>
+              <i class="ri-arrow-right-s-fill right-arrow"></i><NavLink className="my-account-link" to="/nft/editProfile">Edit Profile</NavLink>
             </li>
             <li className="my-account-link-item">
-              <i class="ri-arrow-right-s-fill right-arrow"></i><NavLink className="my-account-link" to="/market">Collection</NavLink>
+              <i class="ri-arrow-right-s-fill right-arrow"></i><NavLink className="my-account-link" to="/nft/market">Collection</NavLink>
             </li>
           </ul>
         </div>

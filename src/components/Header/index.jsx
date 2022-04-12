@@ -12,16 +12,16 @@ const Header = () => {
         <nav className="navigation">
             <ul className="navigation-links">
                 <li className="navigation-link">
-                    <NavLink to="/home" className={navClass => navClass.isActive ? "link active" : "link"}>Home</NavLink>
+                    <NavLink to="/nft/home" className={navClass => navClass.isActive ? "link active" : "link"}>Home</NavLink>
                 </li>
                 <li className="navigation-link">
-                    <NavLink to="/market" className={navClass => navClass.isActive ? "link active" : "link"}>Market</NavLink>
+                    <NavLink to="/nft/market" className={navClass => navClass.isActive ? "link active" : "link"}>Market</NavLink>
                 </li>
                 <li className="navigation-link">
-                    <NavLink to="/createNft" className={navClass => navClass.isActive ? "link active" : "link"}>Create Nft</NavLink>
+                    <NavLink to="/nft/createNft" className={navClass => navClass.isActive ? "link active" : "link"}>Create Nft</NavLink>
                 </li>
                 <li className="navigation-link">
-                    <NavLink to="/contact" className={navClass => navClass.isActive ? "link active" : "link"}>Contact</NavLink>
+                    <NavLink to="/nft/contact" className={navClass => navClass.isActive ? "link active" : "link"}>Contact</NavLink>
                 </li>
             </ul>
         </nav>

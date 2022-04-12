@@ -12,15 +12,15 @@ import Wallet from "../pages/Wallet";
 const Routers = () => {
   return (
     <Routes>
-        <Route path="/nft/" element={<Navigate to="/home"/>}/>
-        <Route path="/home" element={<Home/>}/>
-        <Route path="/createNft" element={<CreateNft/>}/>
-        <Route path="/market" element={<Market/>}/>
-        <Route path="/market/:id" element={<DetailNft/>}/>
-        <Route path="/profile" element={<Profile/>}/>
-        <Route path="/editProfile" element={<EditProfile/>}/>
-        <Route path="/wallet" element={<Wallet/>}/>
-        <Route path="/contact" element={<Contact/>}/>
+        <Route path="/nft/" element={<Navigate to="/nft/home"/>}/>
+        <Route path="/nft/home" element={<Home/>}/>
+        <Route path="/nft/createNft" element={<CreateNft/>}/>
+        <Route path="/nft/market" element={<Market/>}/>
+        <Route path="/nft/market/:id" element={<DetailNft/>}/>
+        <Route path="/nft/profile" element={<Profile/>}/>
+        <Route path="/nft/editProfile" element={<EditProfile/>}/>
+        <Route path="/nft/wallet" element={<Wallet/>}/>
+        <Route path="/nft/contact" element={<Contact/>}/>
     </Routes>
   )
 }
