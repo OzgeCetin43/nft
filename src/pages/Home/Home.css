@@ -1,0 +1,207 @@
+.hero-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 100px 0;
+}
+
+.hero-container .left, .right {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: left;
+    text-align: center;
+}
+
+.hero-container .right {
+    flex-direction: row;
+}
+
+.hero-container .left .subtitle {
+    align-self: start;
+    width: 80%;
+    margin: auto;
+    color: #d3cfc8;
+}
+
+.hero-container .left .title {
+    font-size: 4rem;
+    width: 80%;
+}
+
+.hero-container .left .title .title-inner {
+    color: #d5f667;
+}
+
+.hero-container .left .description {
+    width: 80%;
+    margin: auto;
+    line-height: 2;
+    font-size: 1.25rem;
+}
+
+.hero-container .left .buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.hero-container .left .buttons .explore-btn, .create-btn {
+    text-decoration: none;
+    color: #fff;
+    width: 30%;
+    padding: 20px;
+    border-radius: 4px;
+}
+
+.hero-container .left .buttons .explore-btn {
+    background-color: #d5f667;
+    color: #010101;
+    margin-right: 20px;
+}
+
+.hero-container .left .buttons .explore-btn:hover {
+    color: #d5f667;
+    border: 1px solid #d5f667;
+    background-color: transparent;
+}
+
+.hero-container .left .buttons .create-btn {
+    color: #d5f667;
+    border: 1px solid #d5f667;
+}
+
+.hero-container .left .buttons .create-btn:hover {
+    background-color: #d5f667;
+    color: #010101;
+}
+
+.hero-container .left .bid-and-auction {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.hero-container .left .bid-and-auction .current-bid {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+.hero-container .left .bid-and-auction .current-bid .title, .hero-container .left .bid-and-auction .auction .title {
+    color: #d3cfc8;
+    font-size: 1rem;
+    color: #d5f667;
+}
+
+.hero-container .left .bid-and-auction .current-bid .title {
+    color: #d3cfc8;
+}
+
+.hero-container .left .bid-and-auction .current-bid .bid-eth {
+    color: #d5f667;
+    font-size: 2rem;
+}
+
+.hero-container .left .bid-and-auction .current-bid .bid-dollar {
+    color: #fff;
+    font-size: 1.2rem;
+    margin-left: 30px;
+}
+
+.hero-container .left .bid-and-auction .auction {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+.hero-container .left .bid-and-auction .auction .timer {
+    display: flex;
+    align-items: center;
+}
+
+.hero-container .left .bid-and-auction .auction .timer .time-container {
+    margin-right: 20px;
+}
+
+.hero-container .left .bid-and-auction .auction .timer .time-container .time {
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+.hero-container .left .bid-and-auction .auction .timer .time-container .time-description {
+    color: #d3cfc8;
+}
+
+.hero-container .right .about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 300px;
+}
+
+.hero-container .right .about .about-inner {
+    padding: 10px;
+}
+
+.hero-container .right .about .about-inner .about-title {
+    font-size: 1.8rem;
+    color: #d5f667;
+    margin-bottom: 5px;
+}
+
+@media(max-width: 912px) {
+    .hero-container {
+        flex-direction: column-reverse;
+        margin: 30px 0;
+    }
+    
+    .hero-container .left, .right {
+        width: 90%;
+    }
+    
+    .hero-container .left .title {
+        font-size: 2rem;
+    }
+
+    .hero-container .left .description {
+        font-size: 1rem;
+    }
+
+    .hero-container .right .hero {
+        width: 70%;
+        margin: auto;
+        margin-bottom: 10px;
+    }
+
+    .hero-container .left .bid-and-auction {
+        flex-direction: column;
+    }
+
+    .hero-container .left .bid-and-auction .auction .timer .time-container {
+        margin-right: 10px;
+    }
+
+    .hero-container .left .bid-and-auction .auction .timer .time-container:last-child {
+        margin-right: 0;
+    }
+
+    .hero-container .right {
+        flex-direction: column;
+    }
+
+    .hero-container .right .about {
+        flex-direction: row;
+        height: auto;
+        margin: 20px 0;
+    }
+}

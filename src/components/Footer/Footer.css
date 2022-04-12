@@ -1,0 +1,143 @@
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+.container .footer {
+    color: #d5f667;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 70%;
+    margin: auto;
+    padding: 1.5rem;
+}
+
+.container .footer .description-area, .my-account, .help-and-support, .community {
+    width: 25%;
+}
+
+.container .footer .description-area .logo {
+    color: #d5f667;
+    font-size: 3rem;
+}
+
+.container .footer .description-area .description {
+    font-size: 1.15rem;
+    color: #fff;
+}
+
+.container .footer .my-account .title, .community .title, .help-and-support .title {
+    font-size: 1.4rem;
+    line-height: 2;
+}
+
+.container .footer .my-account .my-account-links, .community .community-links {
+    list-style-type: none;
+}
+
+
+.container .footer .my-account .my-account-links .my-account-link-item, .community .community-links .community-link-item {
+    display: flex;
+    align-items: center;
+}
+
+.container .footer .my-account .my-account-links .my-account-link-item .right-arrow, .community .community-links .community-link-item .right-arrow, .help-and-support .right-arrow {
+    font-size: 2rem;
+}
+
+.container .footer .my-account .my-account-links .my-account-link-item .my-account-link, .community .community-links .community-link-item .community-link {
+    color: #fff;
+    text-decoration: none;
+}
+
+.container .footer .help-and-support p {
+    color: #d5f667;
+    display: flex;
+    align-items: center;
+}
+
+.container .footer .help-and-support .communication {
+    color: #fff;
+}
+
+.container .footer .help-and-support .social-media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 35px;
+    color: #fff;
+    width: 40%;
+}
+
+.container .footer .help-and-support .social-media .social-media-item {
+    font-size: 1.25rem;
+    margin-left: 10px;
+}
+
+.container .footer .help-and-support .social-media .social-media-item:hover {
+    color: #d5f667;
+}
+
+.container .footer .help-and-support .social-media .social-media-item:first-child {
+    margin-left: 0px;
+}
+
+.container .line {
+    background-color: #d5f667;
+}
+
+.container .copyright {
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+@media(max-width: 912px) {
+    .container {
+        width: 100%;
+    }
+
+    .container .footer {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    
+    .container .footer .description-area, .my-account, .community, .help-and-support {
+        width: 50%;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .container .footer .my-account .my-account-links .my-account-link-item, .community .community-links .community-link-item, .container .footer .help-and-support p {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .container .footer .help-and-support .social-media {
+        width: 100%;
+    }
+}
+
+@media(max-width: 500px) {
+    .container .footer {
+        flex-direction: column;
+    }
+
+    .container .footer .description-area, .my-account, .community, .help-and-support {
+        width: 90%;
+    }
+
+    .container .footer .my-account .title, .community .title, .help-and-support .title {
+        font-size: 1.1rem;
+    }
+
+    .container .footer .description-area .description {
+        font-size: 0.9rem;
+    }
+
+    .container .footer .my-account .my-account-links .my-account-link-item .right-arrow, .community .community-links .community-link-item .right-arrow, .help-and-support .right-arrow {
+        font-size: 1rem;
+    }
+} 
