@@ -1,8 +1,7 @@
 {
   "files": {
-    "main.css": "/nft/static/css/main.e80f9592.css",
-    "main.js": "/nft/static/js/main.0bc6500c.js",
-    "static/media/creator4.jpg": "/nft/static/media/creator4.7b4c75d3339e2e6b54a9.jpg",
+    "main.css": "/nft/static/css/main.b6e64c61.css",
+    "main.js": "/nft/static/js/main.38a4b6f1.js",
     "static/media/creator2.jpg": "/nft/static/media/creator2.962b6cc852bff6db04e0.jpg",
     "static/media/creator1.jpg": "/nft/static/media/creator1.600d72e771f3dc8c525c.jpg",
     "static/media/remixicon.svg?t=1590207869815": "/nft/static/media/remixicon.9cedd2150922ead84869.svg",
@@ -12,16 +11,16 @@
     "static/media/hero.png": "/nft/static/media/hero.42f4f00e090a2d995853.png",
     "static/media/remixicon.woff?t=1590207869815": "/nft/static/media/remixicon.8d09fa11700ed63cf96e.woff",
     "static/media/remixicon.woff2?t=1590207869815": "/nft/static/media/remixicon.90668f6f9b3c2c18a090.woff2",
-    "static/media/trend3.jpg": "/nft/static/media/trend3.43914f13b8fd71f4371b.jpg",
-    "static/media/trend2.jpg": "/nft/static/media/trend2.f64e2c0c2d02eff85f30.jpg",
-    "static/media/trend4.jpg": "/nft/static/media/trend4.f7be12a5a7315524f57a.jpg",
-    "static/media/trend1.jpg": "/nft/static/media/trend1.88bdbc91a544a2a4d04a.jpg",
+    "static/media/trend2.jpg": "/nft/static/media/trend2.43914f13b8fd71f4371b.jpg",
+    "static/media/trend1.jpg": "/nft/static/media/trend1.f64e2c0c2d02eff85f30.jpg",
+    "static/media/trend3.jpg": "/nft/static/media/trend3.f7be12a5a7315524f57a.jpg",
+    "static/media/eth.png": "/nft/static/media/eth.4aa4d7e0e1c35331bd89.png",
     "index.html": "/nft/index.html",
-    "main.e80f9592.css.map": "/nft/static/css/main.e80f9592.css.map",
-    "main.0bc6500c.js.map": "/nft/static/js/main.0bc6500c.js.map"
+    "main.b6e64c61.css.map": "/nft/static/css/main.b6e64c61.css.map",
+    "main.38a4b6f1.js.map": "/nft/static/js/main.38a4b6f1.js.map"
   },
   "entrypoints": [
-    "static/css/main.e80f9592.css",
-    "static/js/main.0bc6500c.js"
+    "static/css/main.b6e64c61.css",
+    "static/js/main.38a4b6f1.js"
   ]
 }
