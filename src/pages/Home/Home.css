@@ -186,6 +186,7 @@
     justify-content: space-evenly;
     align-items: center;
     width: 100%;
+    margin-top: 50px;
 }
 
 .popular-works .trends .trend-item {
@@ -204,20 +205,84 @@
 }
 
 .popular-works .trends .trend-item .creator {
+    margin-top: 10px;
+    width: 100%;
+}
+
+.popular-works .trends .trend-item .creator .creator-inner {
     display: flex;
     align-items: center;
-    margin-top: 10px;
+    justify-content: space-between;
+}
+
+.popular-works .trends .trend-item .creator .creator-inner .eth-logo {
+    width: 50px;
+    height: 50px;
+}
+
+.popular-works .trends .trend-item .creator .creator-inner .creator-inner-container {
+    display: flex;
+    align-items: center;
 }
 
 .popular-works .trends .trend-item .creator .creator-image {
-    width: 30px;
-    height: 30px;
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
     border-radius: 50%;
 }
 
-.popular-works .trends .trend-item .creator .creator-name {
-    padding: 0px 10px;
+.popular-works .trends .trend-item .creator .created-by p {
+    font-size: 0.7rem;
+    margin: 10px 0 0;
     color: #d3cfc8;
+}
+
+.popular-works .trends .trend-item .creator .created-by .creator-name {
+    color: #fff;
+    font-size: 1rem;
+}
+
+.popular-works .trends .trend-item .price {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.popular-works .trends .trend-item .price p {
+    color: #d3cfc8;
+}
+
+.popular-works .trends .trend-item .price span {
+    color: #d5f667;
+}
+
+.popular-works .trends .trend-item .buttons {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.popular-works .trends .trend-item .buttons .bid, .history {
+    width: 45%;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.popular-works .trends .trend-item .buttons .bid {
+    background-color: #d5f667;
+    color: #050505;
+}
+
+.popular-works .trends .trend-item .buttons .history {
+    background-color: transparent;
+    border: 1px solid #d5f667;
+    color: #d5f667;
 }
 
 @media(max-width: 912px) {
@@ -270,12 +335,42 @@
         margin: 20px 0;
     }
 
+    .hero-container .left .buttons .explore-btn, .create-btn {
+        padding: 10px;
+    }
+
     .popular-works .title {
         font-size: 2rem;
     }
 
     .popular-works .description {
         font-size: 0.9rem;
+        width: 90%;
+    }
+
+    .popular-works .trends {
+        flex-wrap: wrap;
+    }
+
+    .popular-works .trends .trend-item {
+        width: 45%;
+        margin-bottom: 10px;
+    }
+
+    .popular-works {
+        color: #fff;
+        width: 100%;
+        margin: 50px 0;
+    }
+}
+
+@media(max-width: 500px) {
+    .popular-works .trends {
+        flex-direction: column;
+        margin-top: 30px;
+    }
+
+    .popular-works .trends .trend-item {
         width: 90%;
     }
 }

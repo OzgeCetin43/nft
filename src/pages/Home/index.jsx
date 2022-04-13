@@ -5,11 +5,10 @@ import { Link } from "react-router-dom";
 import trend1 from "../../assets/images/trend1.jpg";
 import trend2 from "../../assets/images/trend2.jpg";
 import trend3 from "../../assets/images/trend3.jpg";
-import trend4 from "../../assets/images/trend4.jpg";
 import creator1 from "../../assets/images/creator1.jpg";
 import creator2 from "../../assets/images/creator2.jpg";
 import creator3 from "../../assets/images/creator3.jpg";
-import creator4 from "../../assets/images/creator4.jpg";
+import eth from "../../assets/images/eth.png"; 
 
 const Home = (props) => {
   const [days, setDays] = useState("00");
@@ -116,32 +115,72 @@ const Home = (props) => {
             <img src={trend1} alt="trend, nft, ethereum"/>
             <h3>Trend #1</h3>
             <div className="creator">
-              <img className="creator-image" src={creator1}/>
-              <small className="creator-name">John Doe</small>
+              <div className="creator-inner">
+                <div className="creator-inner-container">
+                  <img className="creator-image" src={creator1} alt="trend, nft, ethereum"/>
+                  <div className="created-by">
+                    <p>Created by</p>
+                    <small className="creator-name">John Doe</small>
+                  </div>
+                </div>
+                <img src={eth} className="eth-logo"/>
+              </div>
+            </div>
+            <div className="price">
+              <p>Last Bid : 1.47 ETH</p>
+              <span>$4447.41</span>
+            </div>
+            <div className="buttons">
+              <button className="bid">Place Bid</button>
+              <button className="history">History</button>
             </div>
           </div>
           <div className="trend-item">
             <img src={trend2} alt="trend, nft, ethereum"/>
             <h3>Trend #2</h3>
             <div className="creator">
-              <img className="creator-image" src={creator2}/>
-              <small className="creator-name">John Doe</small>
+              <div className="creator-inner">
+                <div className="creator-inner-container">
+                  <img className="creator-image" src={creator2} alt="trend, nft, ethereum"/>
+                  <div className="created-by">
+                    <p>Created by</p>
+                    <small className="creator-name">John Doe</small>
+                  </div>
+                </div>
+                <img src={eth} className="eth-logo"/>
+              </div>
+            </div>
+            <div className="price">
+              <p>Last Bid : 1.47 ETH</p>
+              <span>$4447.41</span>
+            </div>
+            <div className="buttons">
+              <button className="bid">Place Bid</button>
+              <button className="history">History</button>
             </div>
           </div>
           <div className="trend-item">
             <img src={trend3} alt="trend, nft, ethereum"/>
             <h3>Trend #3</h3>
             <div className="creator">
-              <img className="creator-image" src={creator3}/>
-              <small className="creator-name">John Doe</small>
+              <div className="creator-inner">
+                <div className="creator-inner-container">
+                  <img className="creator-image" src={creator3} alt="trend, nft, ethereum"/>
+                  <div className="created-by">
+                    <p>Created by</p>
+                    <small className="creator-name">John Doe</small>
+                  </div>
+                </div>
+                <img src={eth} className="eth-logo"/>
+              </div>
             </div>
-          </div>
-          <div className="trend-item">
-            <img src={trend4} alt="trend, nft, ethereum"/>
-            <h3>Trend #4</h3>
-            <div className="creator">
-              <img className="creator-image" src={creator4}/>
-              <small className="creator-name">John Doe</small>
+            <div className="price">
+              <p>Last Bid : 1.47 ETH</p>
+              <span>$4447.41</span>
+            </div>
+            <div className="buttons">
+              <button className="bid">Place Bid</button>
+              <button className="history">History</button>
             </div>
           </div>
         </div>      
