@@ -2,9 +2,6 @@ import React, { useState, useRef, useEffect } from "react";
 import "./Home.css";
 import hero from "../../assets/images/hero.png";
 import { Link } from "react-router-dom";
-import trend1 from "../../assets/images/trend1.jpg";
-import trend2 from "../../assets/images/trend2.jpg";
-import trend3 from "../../assets/images/trend3.jpg";
 import creator1 from "../../assets/images/creator1.jpg";
 import creator2 from "../../assets/images/creator2.jpg";
 import creator3 from "../../assets/images/creator3.jpg";
@@ -58,8 +55,8 @@ const Home = (props) => {
           <h1 className="title">Discover Best <span className="title-inner">Digital Art</span> and Collect <span className="title-inner">NFTs</span></h1>
           <p className="description">The original creators and designers of Non-Fungible Token technology have joined forces to create the world's first marketplace for height-end collectors. Collect, buy, and sell exclusive Crypto Art from over 10000 artists.</p>
           <div className="buttons">
-            <Link to="/market" className="explore-btn">Explore</Link>
-            <Link to="/createNfft" className="create-btn">Cretae</Link>
+            <Link to="/nft/market" className="explore-btn">Explore</Link>
+            <Link to="/nft/createNft" className="create-btn">Cretae</Link>
           </div>
           <div className="bid-and-auction">
             <div className="current-bid">
@@ -112,78 +109,217 @@ const Home = (props) => {
         <p className="description">Various kinds of Artwork categories that are trending this week. The trend will be reset every week. Don't miss out on the best artworks every week!</p>  
         <div className="trends">
           <div className="trend-item">
-            <img src={trend1} alt="trend, nft, ethereum"/>
-            <h3>Trend #1</h3>
-            <div className="creator">
-              <div className="creator-inner">
-                <div className="creator-inner-container">
-                  <img className="creator-image" src={creator1} alt="trend, nft, ethereum"/>
-                  <div className="created-by">
-                    <p>Created by</p>
-                    <small className="creator-name">John Doe</small>
-                  </div>
-                </div>
-                <img src={eth} className="eth-logo"/>
+            <div className="trend-item-image-1"/>
+            <p className="trend-item-title">Trend #1</p>
+            <div className="trend-item-prices">
+              <div>
+                <p className="eth">10 ETH</p>
+                <p className="dollar">$30.254,5</p>
               </div>
+              <p className="last-bid">Last bid: <span>11 ETH</span></p>
+              <img src={eth} className="eth-logo" alt="ethereum, price, nft"/>
             </div>
-            <div className="price">
-              <p>Last Bid : 1.47 ETH</p>
-              <span>$4447.41</span>
+            <div className="trend-item-creator">
+              <div className="trend-item-creator-inner">
+                <img src={creator1} alt="creator, nft, marketplace, ethereum" className="trend-item-creator-image"/>
+                <div>
+                  <p className="created-by">Created by</p>
+                  <p className="creator">Smith Wright</p>
+                </div>
+              </div>
+              <i class="ri-heart-fill heart"></i>
             </div>
             <div className="buttons">
-              <button className="bid">Place Bid</button>
-              <button className="history">History</button>
+              <button className="bid-btn">Place a bid</button>
+              <button className="history-btn">History</button>
             </div>
           </div>
           <div className="trend-item">
-            <img src={trend2} alt="trend, nft, ethereum"/>
-            <h3>Trend #2</h3>
-            <div className="creator">
-              <div className="creator-inner">
-                <div className="creator-inner-container">
-                  <img className="creator-image" src={creator2} alt="trend, nft, ethereum"/>
-                  <div className="created-by">
-                    <p>Created by</p>
-                    <small className="creator-name">John Doe</small>
-                  </div>
-                </div>
-                <img src={eth} className="eth-logo"/>
+            <div className="trend-item-image-2"/>
+            <p className="trend-item-title">Trend #2</p>
+            <div className="trend-item-prices">
+              <div>
+                <p className="eth">10 ETH</p>
+                <p className="dollar">$30.254,5</p>
               </div>
+              <p className="last-bid">Last bid: <span>11 ETH</span></p>
+              <img src={eth} className="eth-logo" alt="ethereum, price, nft"/>
             </div>
-            <div className="price">
-              <p>Last Bid : 1.47 ETH</p>
-              <span>$4447.41</span>
+            <div className="trend-item-creator">
+              <div className="trend-item-creator-inner">
+                <img src={creator2} alt="creator, nft, marketplace, ethereum" className="trend-item-creator-image"/>
+                <div>
+                  <p className="created-by">Created by</p>
+                  <p className="creator">Smith Wright</p>
+                </div>
+              </div>
+              <i class="ri-heart-fill heart"></i>
             </div>
             <div className="buttons">
-              <button className="bid">Place Bid</button>
-              <button className="history">History</button>
+              <button className="bid-btn">Place a bid</button>
+              <button className="history-btn">History</button>
             </div>
           </div>
           <div className="trend-item">
-            <img src={trend3} alt="trend, nft, ethereum"/>
-            <h3>Trend #3</h3>
-            <div className="creator">
-              <div className="creator-inner">
-                <div className="creator-inner-container">
-                  <img className="creator-image" src={creator3} alt="trend, nft, ethereum"/>
-                  <div className="created-by">
-                    <p>Created by</p>
-                    <small className="creator-name">John Doe</small>
-                  </div>
-                </div>
-                <img src={eth} className="eth-logo"/>
+            <div className="trend-item-image-3"/>
+            <p className="trend-item-title">Trend #3</p>
+            <div className="trend-item-prices">
+              <div>
+                <p className="eth">10 ETH</p>
+                <p className="dollar">$30.254,5</p>
               </div>
+              <p className="last-bid">Last bid: <span>11 ETH</span></p>
+              <img src={eth} className="eth-logo" alt="ethereum, price, nft"/>
             </div>
-            <div className="price">
-              <p>Last Bid : 1.47 ETH</p>
-              <span>$4447.41</span>
+            <div className="trend-item-creator">
+              <div className="trend-item-creator-inner">
+                <img src={creator3} alt="creator, nft, marketplace, ethereum" className="trend-item-creator-image"/>
+                <div>
+                  <p className="created-by">Created by</p>
+                  <p className="creator">Smith Wright</p>
+                </div>
+              </div>
+              <i class="ri-heart-fill heart"></i>
             </div>
             <div className="buttons">
-              <button className="bid">Place Bid</button>
-              <button className="history">History</button>
+              <button className="bid-btn">Place a bid</button>
+              <button className="history-btn">History</button>
             </div>
           </div>
-        </div>      
+          <div className="trend-item">
+            <div className="trend-item-image-4"/>
+            <p className="trend-item-title">Trend #4</p>
+            <div className="trend-item-prices">
+              <div>
+                <p className="eth">10 ETH</p>
+                <p className="dollar">$30.254,5</p>
+              </div>
+              <p className="last-bid">Last bid: <span>11 ETH</span></p>
+              <img src={eth} className="eth-logo" alt="ethereum, price, nft"/>
+            </div>
+            <div className="trend-item-creator">
+              <div className="trend-item-creator-inner">
+                <img src={creator1} alt="creator, nft, marketplace, ethereum" className="trend-item-creator-image"/>
+                <div>
+                  <p className="created-by">Created by</p>
+                  <p className="creator">Smith Wright</p>
+                </div>
+              </div>
+              <i class="ri-heart-fill heart"></i>
+            </div>
+            <div className="buttons">
+              <button className="bid-btn">Place a bid</button>
+              <button className="history-btn">History</button>
+            </div>
+          </div>
+          <div className="trend-item">
+            <div className="trend-item-image-5"/>
+            <p className="trend-item-title">Trend #5</p>
+            <div className="trend-item-prices">
+              <div>
+                <p className="eth">10 ETH</p>
+                <p className="dollar">$30.254,5</p>
+              </div>
+              <p className="last-bid">Last bid: <span>11 ETH</span></p>
+              <img src={eth} className="eth-logo" alt="ethereum, price, nft"/>
+            </div>
+            <div className="trend-item-creator">
+              <div className="trend-item-creator-inner">
+                <img src={creator2} alt="creator, nft, marketplace, ethereum" className="trend-item-creator-image"/>
+                <div>
+                  <p className="created-by">Created by</p>
+                  <p className="creator">Smith Wright</p>
+                </div>
+              </div>
+              <i class="ri-heart-fill heart"></i>
+            </div>
+            <div className="buttons">
+              <button className="bid-btn">Place a bid</button>
+              <button className="history-btn">History</button>
+            </div>
+          </div>
+          <div className="trend-item">
+            <div className="trend-item-image-6"/>
+            <p className="trend-item-title">Trend #6</p>
+            <div className="trend-item-prices">
+              <div>
+                <p className="eth">10 ETH</p>
+                <p className="dollar">$30.254,5</p>
+              </div>
+              <p className="last-bid">Last bid: <span>11 ETH</span></p>
+              <img src={eth} className="eth-logo" alt="ethereum, price, nft"/>
+            </div>
+            <div className="trend-item-creator">
+              <div className="trend-item-creator-inner">
+                <img src={creator3} alt="creator, nft, marketplace, ethereum" className="trend-item-creator-image"/>
+                <div>
+                  <p className="created-by">Created by</p>
+                  <p className="creator">Smith Wright</p>
+                </div>
+              </div>
+              <i class="ri-heart-fill heart"></i>
+            </div>
+            <div className="buttons">
+              <button className="bid-btn">Place a bid</button>
+              <button className="history-btn">History</button>
+            </div>
+          </div>
+          <div className="trend-item">
+            <div className="trend-item-image-7"/>
+            <p className="trend-item-title">Trend #7</p>
+            <div className="trend-item-prices">
+              <div>
+                <p className="eth">10 ETH</p>
+                <p className="dollar">$30.254,5</p>
+              </div>
+              <p className="last-bid">Last bid: <span>11 ETH</span></p>
+              <img src={eth} className="eth-logo" alt="ethereum, price, nft"/>
+            </div>
+            <div className="trend-item-creator">
+              <div className="trend-item-creator-inner">
+                <img src={creator1} alt="creator, nft, marketplace, ethereum" className="trend-item-creator-image"/>
+                <div>
+                  <p className="created-by">Created by</p>
+                  <p className="creator">Smith Wright</p>
+                </div>
+              </div>
+              <i class="ri-heart-fill heart"></i>
+            </div>
+            <div className="buttons">
+              <button className="bid-btn">Place a bid</button>
+              <button className="history-btn">History</button>
+            </div>
+          </div>
+          <div className="trend-item">
+            <div className="trend-item-image-8"/>
+            <p className="trend-item-title">Trend #8</p>
+            <div className="trend-item-prices">
+              <div>
+                <p className="eth">10 ETH</p>
+                <p className="dollar">$30.254,5</p>
+              </div>
+              <p className="last-bid">Last bid: <span>11 ETH</span></p>
+              <img src={eth} className="eth-logo" alt="ethereum, price, nft"/>
+            </div>
+            <div className="trend-item-creator">
+              <div className="trend-item-creator-inner">
+                <img src={creator2} alt="creator, nft, marketplace, ethereum" className="trend-item-creator-image"/>
+                <div>
+                  <p className="created-by">Created by</p>
+                  <p className="creator">Smith Wright</p>
+                </div>
+              </div>
+              <i class="ri-heart-fill heart"></i>
+            </div>
+            <div className="buttons">
+              <button className="bid-btn">Place a bid</button>
+              <button className="history-btn">History</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="more-container">
+        <Link to="/nft/market" className="more-btn">More</Link>
       </div>
     </>
   )
