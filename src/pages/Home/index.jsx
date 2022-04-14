@@ -321,6 +321,24 @@ const Home = (props) => {
       <div className="more-container">
         <Link to="/nft/market" className="more-btn">More</Link>
       </div>
+      <div className="info">
+        <div className="info-container">
+          <i class="ri-wallet-line wallet"></i>
+          <p className="info-description">Connect your Wallet</p>
+        </div>
+        <div className="info-container">
+          <i class="ri-stack-line stack"></i>
+          <p className="info-description">Create a Collection</p>
+        </div>
+        <div className="info-container">
+          <i class="ri-folder-add-line add"></i>
+          <p className="info-description">Add NFT Products</p>
+        </div>
+        <div className="info-container">
+          <i class="ri-shopping-cart-line chart"></i>
+          <p className="info-description">Ready for sale</p>
+        </div>
+      </div>
     </>
   )
 }

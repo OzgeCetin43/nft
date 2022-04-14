@@ -186,6 +186,7 @@
     border-radius: 20px;
     background-color: #212121;
     margin: 10px;
+    box-shadow: 1px 1px 10px 1px rgba(255, 255, 255, 0.4);
 }
 
 .popular-works .trends .trend-item .trend-item-image-1, .popular-works .trends .trend-item .trend-item-image-2, .popular-works .trends .trend-item .trend-item-image-3, .trends .trend-item .trend-item-image-4, .trends .trend-item .trend-item-image-5, .trends .trend-item .trend-item-image-6, .trends .trend-item .trend-item-image-7, .trends .trend-item .trend-item-image-8 {
@@ -347,6 +348,58 @@
     margin-bottom: 20px;
 }
 
+.info {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    height: 200px;
+    width: 100%;
+    margin: 50px 0;
+}
+
+.info .info-container {
+    width: 20%;
+    text-align: center;
+    color: #fff;
+    background-color: #212121;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 4px;
+    height: 100%;
+    box-shadow: 1px 1px 20px 1px rgba(255, 255, 255, 0.4);
+}
+
+.info .info-container .wallet, .info .info-container .stack, .info .info-container .add, .info .info-container .chart {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 50%;
+} 
+
+.info .info-container .wallet {
+    background-color: #068F46;
+}
+
+.info .info-container .stack {
+    background-color: #0D4D8A;
+}
+
+.info .info-container .add {
+    background-color: #561D78;
+}
+
+.info .info-container .chart {
+    background-color: #E6B432;
+}
+
+.info .info-container .info-description {
+    font-size: 1.3rem;
+}
+
 @media(max-width: 912px) {
     .hero-container {
         flex-direction: column-reverse;
@@ -446,6 +499,37 @@
 
     .more-container .more-btn {
         width: 35%;
+    }
+
+    .info .info-container .wallet, .info .info-container .stack, .info .info-container .add, .info .info-container .chart {
+        font-size: 1.2rem;
+        padding: 10px;
+    } 
+
+    .info .info-container .info-description {
+        font-size: 1rem;
+    }
+}
+
+@media(max-width: 600px) {
+    .info {
+        margin: 50px 0;
+    }
+
+    .info .info-container {
+        width: 40%;
+        height: 100px;
+        margin-bottom: 20px;
+        box-shadow: 1px 1px 10px 1px rgba(255, 255, 255, 0.4);
+    }
+
+    .info .info-container .wallet, .info .info-container .stack, .info .info-container .add, .info .info-container .chart {
+        font-size: 1rem;
+        padding: 10px;
+    } 
+
+    .info .info-container .info-description {
+        font-size: 0.8rem;
     }
 }
 
