@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/nft/static/css/main.8a75944c.css",
-    "main.js": "/nft/static/js/main.414548b5.js",
+    "main.css": "/nft/static/css/main.8e8654a9.css",
+    "main.js": "/nft/static/js/main.f8d44ec1.js",
     "static/media/creator2.jpg": "/nft/static/media/creator2.962b6cc852bff6db04e0.jpg",
     "static/media/creator1.jpg": "/nft/static/media/creator1.600d72e771f3dc8c525c.jpg",
     "static/media/remixicon.svg?t=1590207869815": "/nft/static/media/remixicon.9cedd2150922ead84869.svg",
@@ -21,11 +21,11 @@
     "static/media/trend5.png": "/nft/static/media/trend5.cf75c66c01912c3af530.png",
     "static/media/eth.png": "/nft/static/media/eth.4aa4d7e0e1c35331bd89.png",
     "index.html": "/nft/index.html",
-    "main.8a75944c.css.map": "/nft/static/css/main.8a75944c.css.map",
-    "main.414548b5.js.map": "/nft/static/js/main.414548b5.js.map"
+    "main.8e8654a9.css.map": "/nft/static/css/main.8e8654a9.css.map",
+    "main.f8d44ec1.js.map": "/nft/static/js/main.f8d44ec1.js.map"
   },
   "entrypoints": [
-    "static/css/main.8a75944c.css",
-    "static/js/main.414548b5.js"
+    "static/css/main.8e8654a9.css",
+    "static/js/main.f8d44ec1.js"
   ]
 }
