@@ -1,11 +1,11 @@
-.hero-container {
+.hero-container, .hero-description  {
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 100px 0;
 }
 
-.hero-container .left, .right {
+.hero-container .left, .right, .hero-description .left, .right {
     width: 40%;
     display: flex;
     flex-direction: column;
@@ -146,6 +146,38 @@
     font-size: 1.8rem;
     color: #d5f667;
     margin-bottom: 5px;
+}
+
+
+.hero-description {
+    margin: 30px 0;
+}
+
+.hero-description .right .title {
+    font-size: 3rem;
+    width: 80%;
+    color: #d5f667;
+}
+
+.hero-description .right .description {
+    width: 80%;
+    margin: auto;
+    line-height: 2;
+    font-size: 1.25rem;
+}
+
+.hero-description .right .title span {
+    color: #d5f667;
+}
+
+.hero-description .right .contact-btn {
+    background-color: #d5f667;
+    color: #050505;
+    text-decoration: none;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 4px;
+    width: 50%;
 }
 
 .popular-works {
@@ -454,9 +486,35 @@
         padding: 10px;
     }
 
+    .hero-description {
+        flex-direction: column;
+    }
+    
+    .hero-description .left, .right {
+        width: 90%;
+    }
+    
+    .hero-description .right .title {
+        font-size: 2rem;
+    }
+
+    .hero-description .right .description {
+        font-size: 1rem;
+    }
+
+    .hero-description .right .contact-btn {
+        padding: 10px;
+    }
+
+    .hero-description .left .dog {
+        width: 70%;
+        margin: auto;
+        margin-bottom: 10px;
+    }
+
     .popular-works {
         width: 100%;
-        margin: 50px 0;
+        margin: 10px 0;
     }
 
     .popular-works .title {

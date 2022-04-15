@@ -6,6 +6,7 @@ import creator1 from "../../assets/images/creator1.jpg";
 import creator2 from "../../assets/images/creator2.jpg";
 import creator3 from "../../assets/images/creator3.jpg";
 import eth from "../../assets/images/eth.png"; 
+import dog from "../../assets/images/dog.png";
 
 const Home = (props) => {
   const [days, setDays] = useState("00");
@@ -102,6 +103,17 @@ const Home = (props) => {
               <p className="about-description">Artist</p>
             </div>
           </div>
+        </div>
+      </div>
+      <div className="hero-description">
+        <div className="left">
+          <img src={dog}  alt="nft, marketplace, ethereum" className="dog"/>
+        </div>
+        <div className="right">
+          <h2 className="title">The Biggest <span>NFT</span> Marketplace</h2>
+          <p className="description">Welcome to the largest NFT marketplace in the digital arts industry. Here you can find rare collectibles for all kinds of artwork made by talented.</p>
+          <p className="description">Creators from all accross the globe. Whether you are interested in digital art, photography or unique mixed media, you can find it here.</p>
+          <Link to="/nft/contact" className="contact-btn">Contact Us</Link>
         </div>
       </div>
       <div className="popular-works">
@@ -336,7 +348,7 @@ const Home = (props) => {
         </div>
         <div className="info-container">
           <i class="ri-shopping-cart-line chart"></i>
-          <p className="info-description">Ready for sale</p>
+          <p className="info-description">Ready for Sale</p>
         </div>
       </div>
     </>
