@@ -7,6 +7,9 @@ import creator2 from "../../assets/images/creator2.jpg";
 import creator3 from "../../assets/images/creator3.jpg";
 import eth from "../../assets/images/eth.png"; 
 import dog from "../../assets/images/dog.png";
+import customer1 from "../../assets/images/customer1.jpg";
+import customer2 from "../../assets/images/customer2.jpg";
+import customer3 from "../../assets/images/customer3.jpg";
 
 const Home = (props) => {
   const [days, setDays] = useState("00");
@@ -57,7 +60,7 @@ const Home = (props) => {
           <p className="description">The original creators and designers of Non-Fungible Token technology have joined forces to create the world's first marketplace for height-end collectors. Collect, buy, and sell exclusive Crypto Art from over 10000 artists.</p>
           <div className="buttons">
             <Link to="/nft/market" className="explore-btn">Explore</Link>
-            <Link to="/nft/createNft" className="create-btn">Cretae</Link>
+            <Link to="/nft/createNft" className="create-btn">Create</Link>
           </div>
           <div className="bid-and-auction">
             <div className="current-bid">
@@ -349,6 +352,37 @@ const Home = (props) => {
         <div className="info-container">
           <i class="ri-shopping-cart-line chart"></i>
           <p className="info-description">Ready for Sale</p>
+        </div>
+      </div>
+      <div className="testimonials">
+        <h2 className="title">What Customers're Saying</h2>
+        <p className="description">More than 170 countries' buyers and sellers have chosen us. They are very happy for care of us. Here are some client's testimony. Be a part of us.</p>
+      
+        <div className="testimonials-customers">
+          <div className="customer">
+            <i class="ri-double-quotes-l quote"></i>
+            <p className="comment">The best marketplace for NFTs. They have a huge collection of beautiful digital art, and it is super easy to sell and buy your NFTs here.</p>
+            <div className="customer-info">
+              <img src={customer1} alt="customer, nft, marketplace, ethereum" className="customer-image"/>
+              <span>Alex - Canada</span>
+            </div>
+          </div>
+          <div className="customer">
+            <i class="ri-double-quotes-l quote"></i>
+            <p className="comment">The best marketplace for NFTs. They have a huge collection of beautiful digital art, and it is super easy to sell and buy your NFTs here.</p>
+            <div className="customer-info">
+              <img src={customer2} alt="customer, nft, marketplace, ethereum" className="customer-image"/>
+              <span>Mary - USA</span>
+            </div>
+          </div>
+          <div className="customer">
+            <i class="ri-double-quotes-l quote"></i>
+            <p className="comment">The best marketplace for NFTs. They have a huge collection of beautiful digital art, and it is super easy to sell and buy your NFTs here.</p>
+            <div className="customer-info">
+              <img src={customer3} alt="customer, nft, marketplace, ethereum" className="customer-image"/>
+              <span>Tom - Italy</span>
+            </div>
+          </div>
         </div>
       </div>
     </>
