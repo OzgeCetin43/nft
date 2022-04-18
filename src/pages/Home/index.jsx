@@ -10,6 +10,10 @@ import dog from "../../assets/images/dog.png";
 import customer1 from "../../assets/images/customer1.jpg";
 import customer2 from "../../assets/images/customer2.jpg";
 import customer3 from "../../assets/images/customer3.jpg";
+import seller1 from "../../assets/images/seller1.png";
+import seller2 from "../../assets/images/seller2.png";
+import seller3 from "../../assets/images/seller3.png";
+import seller4 from "../../assets/images/seller4.png";
 
 const Home = (props) => {
   const [days, setDays] = useState("00");
@@ -357,7 +361,6 @@ const Home = (props) => {
       <div className="testimonials">
         <h2 className="title">What Customers're Saying</h2>
         <p className="description">More than 170 countries' buyers and sellers have chosen us. They are very happy for care of us. Here are some client's testimony. Be a part of us.</p>
-      
         <div className="testimonials-customers">
           <div className="customer">
             <i class="ri-double-quotes-l quote"></i>
@@ -382,6 +385,84 @@ const Home = (props) => {
               <img src={customer3} alt="customer, nft, marketplace, ethereum" className="customer-image"/>
               <span>Tom - Italy</span>
             </div>
+          </div>
+        </div>
+      </div>
+      <div className="seller">
+        <small className="subtitle">Top Artists</small>
+        <h2 className="title">Creative Authors</h2>
+        <div className="seller-container">
+          <div className="seller-item">
+            <img src={seller1} alt="seller, nft, marketplace, ethereum" className="seller-image"/>
+            <div className="seller-info">
+              <h3 className="name">Danny Green</h3>
+              <p className="product-count">Product: 06</p>
+              <b className="price">Earned: 24.5 ETH</b>
+            </div>
+            <h1 className="rank">1</h1>
+          </div>
+          <div className="seller-item">
+            <img src={seller2} alt="seller, nft, marketplace, ethereum" className="seller-image"/>
+            <div className="seller-info">
+              <h3 className="name">Ben Willer</h3>
+              <p className="product-count">Product: 36</p>
+              <b className="price">Earned: 84.5 ETH</b>
+            </div>
+            <h1 className="rank">2</h1>
+          </div>
+          <div className="seller-item">
+            <img src={seller3} alt="seller, nft, marketplace, ethereum" className="seller-image"/>
+            <div className="seller-info">
+              <h3 className="name">Mary Grey</h3>
+              <p className="product-count">Product: 17</p>
+              <b className="price">Earned: 44.5 ETH</b>
+            </div>
+            <h1 className="rank">3</h1>
+          </div>
+          <div className="seller-item">
+            <img src={seller4} alt="seller, nft, marketplace, ethereum" className="seller-image"/>
+            <div className="seller-info">
+              <h3 className="name">Tom Adam</h3>
+              <p className="product-count">Product: 43</p>
+              <b className="price">Earned: 39.5 ETH</b>
+            </div>
+            <h1 className="rank">4</h1>
+          </div>
+          <div className="seller-item">
+            <img src={seller1} alt="seller, nft, marketplace, ethereum" className="seller-image"/>
+            <div className="seller-info">
+              <h3 className="name">Danny Green</h3>
+              <p className="product-count">Product: 06</p>
+              <b className="price">Earned: 24.5 ETH</b>
+            </div>
+            <h1 className="rank">5</h1>
+          </div>
+          <div className="seller-item">
+            <img src={seller2} alt="seller, nft, marketplace, ethereum" className="seller-image"/>
+            <div className="seller-info">
+              <h3 className="name">Ben Willer</h3>
+              <p className="product-count">Product: 36</p>
+              <b className="price">Earned: 84.5 ETH</b>
+            </div>
+            <h1 className="rank">6</h1>
+          </div>
+          <div className="seller-item">
+            <img src={seller3} alt="seller, nft, marketplace, ethereum" className="seller-image"/>
+            <div className="seller-info">
+              <h3 className="name">Mary Grey</h3>
+              <p className="product-count">Product: 17</p>
+              <b className="price">Earned: 44.5 ETH</b>
+            </div>
+            <h1 className="rank">7</h1>
+          </div>
+          <div className="seller-item">
+            <img src={seller4} alt="seller, nft, marketplace, ethereum" className="seller-image"/>
+            <div className="seller-info">
+              <h3 className="name">Tom Adam</h3>
+              <p className="product-count">Product: 43</p>
+              <b className="price">Earned: 39.5 ETH</b>
+            </div>
+            <h1 className="rank">8</h1>
           </div>
         </div>
       </div>
