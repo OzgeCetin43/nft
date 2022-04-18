@@ -21,6 +21,8 @@ const Home = (props) => {
   const [minutes, setMinutes] = useState("00");
   const [seconds, setSeconds] = useState("00");
 
+  const [historyIsActive, setHistoryIsActive] = useState(false);
+
   let interval = useRef();
 
     const startTimer = () => {
@@ -126,6 +128,32 @@ const Home = (props) => {
       <div className="popular-works">
         <h1 className="title">Trending this week</h1>
         <p className="description">Various kinds of Artwork categories that are trending this week. The trend will be reset every week. Don't miss out on the best artworks every week!</p>  
+        {
+          historyIsActive && <div className="history-modal">
+            <div className="history-modal-inner">
+              <i class="ri-close-fill close" onClick={() => setHistoryIsActive(false)}></i>
+              <h1 className="title">History</h1>
+              <div className="bid-info">
+                <img src={customer1} alt="nft, marketplace, ethereum" className="customer-image"/>
+                <div className="customer-info">
+                  <p className="description">Bid accepted by</p>   
+                  <p className="name">Mary Adel</p>
+                  <small className="date">17/04/2022, 17:28</small>           
+                </div>
+                <i class="ri-check-double-line check"></i>
+              </div>
+              <div className="bid-info">
+                <img src={customer2} alt="nft, marketplace, ethereum" className="customer-image"/>
+                <div className="customer-info">
+                  <p className="description">Bid accepted by</p>   
+                  <p className="name">Derek White</p>
+                  <small className="date">17/04/2022, 17:30</small>           
+                </div>
+                <i class="ri-check-double-line check"></i>
+              </div>
+            </div>
+          </div>
+        }
         <div className="trends">
           <div className="trend-item">
             <div className="trend-item-image-1"/>
@@ -150,7 +178,7 @@ const Home = (props) => {
             </div>
             <div className="buttons">
               <button className="bid-btn">Place a bid</button>
-              <button className="history-btn">History</button>
+              <button className="history-btn" onClick={() => setHistoryIsActive(true)}>History</button>
             </div>
           </div>
           <div className="trend-item">
@@ -176,7 +204,7 @@ const Home = (props) => {
             </div>
             <div className="buttons">
               <button className="bid-btn">Place a bid</button>
-              <button className="history-btn">History</button>
+              <button className="history-btn" onClick={() => setHistoryIsActive(true)}>History</button>
             </div>
           </div>
           <div className="trend-item">
@@ -202,7 +230,7 @@ const Home = (props) => {
             </div>
             <div className="buttons">
               <button className="bid-btn">Place a bid</button>
-              <button className="history-btn">History</button>
+              <button className="history-btn" onClick={() => setHistoryIsActive(true)}>History</button>
             </div>
           </div>
           <div className="trend-item">
@@ -228,7 +256,7 @@ const Home = (props) => {
             </div>
             <div className="buttons">
               <button className="bid-btn">Place a bid</button>
-              <button className="history-btn">History</button>
+              <button className="history-btn" onClick={() => setHistoryIsActive(true)}>History</button>
             </div>
           </div>
           <div className="trend-item">
@@ -254,7 +282,7 @@ const Home = (props) => {
             </div>
             <div className="buttons">
               <button className="bid-btn">Place a bid</button>
-              <button className="history-btn">History</button>
+              <button className="history-btn" onClick={() => setHistoryIsActive(true)}>History</button>
             </div>
           </div>
           <div className="trend-item">
@@ -280,7 +308,7 @@ const Home = (props) => {
             </div>
             <div className="buttons">
               <button className="bid-btn">Place a bid</button>
-              <button className="history-btn">History</button>
+              <button className="history-btn" onClick={() => setHistoryIsActive(true)}>History</button>
             </div>
           </div>
           <div className="trend-item">
@@ -306,7 +334,7 @@ const Home = (props) => {
             </div>
             <div className="buttons">
               <button className="bid-btn">Place a bid</button>
-              <button className="history-btn">History</button>
+              <button className="history-btn" onClick={() => setHistoryIsActive(true)}>History</button>
             </div>
           </div>
           <div className="trend-item">
@@ -332,7 +360,7 @@ const Home = (props) => {
             </div>
             <div className="buttons">
               <button className="bid-btn">Place a bid</button>
-              <button className="history-btn">History</button>
+              <button className="history-btn" onClick={() => setHistoryIsActive(true)}>History</button>
             </div>
           </div>
         </div>
@@ -344,18 +372,22 @@ const Home = (props) => {
         <div className="info-container">
           <i class="ri-wallet-line wallet"></i>
           <p className="info-description">Connect your Wallet</p>
+          <p className="info-description-long">Powerful features and inclusions, which makes NFTs standout, easily customizable and scalable.</p>
         </div>
         <div className="info-container">
           <i class="ri-stack-line stack"></i>
           <p className="info-description">Create a Collection</p>
+          <p className="info-description-long">A great collection of beautiful website templates for your need. Choose the best suitable template.</p>
         </div>
         <div className="info-container">
           <i class="ri-folder-add-line add"></i>
-          <p className="info-description">Add NFT Products</p>
+          <p className="info-description">Add New NFTs</p>
+          <p className="info-description-long">We've made the template fully responsive, so it looks great on all devices: desktop, tables and mobile.</p>
         </div>
         <div className="info-container">
           <i class="ri-shopping-cart-line chart"></i>
           <p className="info-description">Ready for Sale</p>
+          <p className="info-description-long">I throw myself down amoung the tall grass by the stream as I lie close the earth NFT's.</p>
         </div>
       </div>
       <div className="testimonials">

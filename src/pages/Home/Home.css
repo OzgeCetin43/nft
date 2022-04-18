@@ -177,7 +177,7 @@
     padding: 20px;
     margin-top: 20px;
     border-radius: 4px;
-    width: 50%;
+    width: 25%;
 }
 
 .popular-works {
@@ -209,6 +209,88 @@
     justify-content: center;
     flex-wrap: wrap;
     margin: 50px 0;
+}
+
+.popular-works .history-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(5, 5, 5, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.popular-works .history-modal .history-modal-inner {
+    width: 25%;
+    min-height: 400px;
+    background-color: #212121;
+    border-radius: 4px;
+    border: 1px solid rgba(211, 207, 200, 0.4);
+    box-shadow: 1px 1px 10px 1px rgba(255, 255, 255, 0.4);
+    position: relative;
+}
+
+.popular-works .history-modal .history-modal-inner .close {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    padding: 10px;
+    background-color: #d5f667;
+    color: #050505;
+    border-radius: 50%;
+}
+
+.popular-works .history-modal .history-modal-inner .title {
+    font-size: 2rem;
+    color: #d5f667;
+}
+
+.popular-works .history-modal .history-modal-inner .bid-info {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    width: 85%;
+    margin: 10px auto;
+    border: 1px solid rgba(211, 207, 200, 0.4);
+    border-radius: 4px;
+    position: relative;
+}
+
+.popular-works .history-modal .history-modal-inner .bid-info .customer-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.popular-works .history-modal .history-modal-inner .bid-info .customer-info {
+    margin-left: 20px;
+    margin-bottom: 0;
+}
+
+.popular-works .history-modal .history-modal-inner .bid-info .customer-info .description {
+    width: 100%;
+    text-align: left;
+    color: #d3cfc8;
+}
+
+.popular-works .history-modal .history-modal-inner .bid-info .customer-info .name {
+    color: #fff;
+    position: relative;
+    top: -10px;
+}
+
+.popular-works .history-modal .history-modal-inner .bid-info .customer-info .date {
+    color: #d5f667;
+}
+
+.popular-works .history-modal .history-modal-inner .bid-info .check {
+    color: #d5f667;
+    position: absolute;
+    right: 10px;
+    font-size: 2rem;
 }
 
 .popular-works .trends .trend-item {
@@ -333,6 +415,11 @@
 .popular-works .trends .trend-item .trend-item-creator .heart {
     font-size: 1.5rem;
     color: #fff;
+    cursor: pointer;
+}
+
+.popular-works .trends .trend-item .trend-item-creator .heart:hover {
+    color: #d5f667;
 }
 
 .popular-works .trends .trend-item .buttons {
@@ -349,6 +436,7 @@
     outline: none;
     border: none;
     font-size: 1.1rem;
+    cursor: pointer;
 }
 
 .popular-works .trends .trend-item .buttons .bid-btn {
@@ -431,6 +519,12 @@
 
 .info .info-container .info-description {
     font-size: 1.3rem;
+    margin-bottom: 5px;
+}
+
+.info .info-container .info-description-long {
+    font-size: 0.9rem;
+    line-height: 1.5;
 }
 
 .testimonials {
@@ -565,7 +659,7 @@
 .seller .seller-container .seller-item .rank {
     position: absolute;
     right: 10px;
-    font-size: 5rem;
+    font-size: 4rem;
     color: rgba(255, 255, 255, 0.2);
 }
 
@@ -641,6 +735,7 @@
 
     .hero-description .right .contact-btn {
         padding: 10px;
+        width: 50%;
     }
 
     .hero-description .left .dog {
@@ -699,10 +794,15 @@
     .info .info-container .wallet, .info .info-container .stack, .info .info-container .add, .info .info-container .chart {
         font-size: 1.2rem;
         padding: 10px;
+        margin-bottom: 10px;
     } 
 
     .info .info-container .info-description {
-        font-size: 1rem;
+        font-size: 0.8rem;
+    }
+
+    .info .info-container .info-description-long {
+        display: none;
     }
 
     .seller .subtitle {
@@ -719,6 +819,10 @@
 
     .seller .seller-container .seller-item .rank {
         font-size: 3rem;
+    }
+
+    .popular-works .history-modal .history-modal-inner {
+        width: 60%;
     }
 }
 
@@ -758,6 +862,10 @@
 
     .info .info-container .info-description {
         font-size: 0.8rem;
+    }
+
+    .popular-works .history-modal .history-modal-inner {
+        width: 90%;
     }
 }
 
