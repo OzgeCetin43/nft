@@ -306,38 +306,38 @@
 .popular-works .trends .trend-item .trend-item-image-1, .popular-works .trends .trend-item .trend-item-image-2, .popular-works .trends .trend-item .trend-item-image-3, .trends .trend-item .trend-item-image-4, .trends .trend-item .trend-item-image-5, .trends .trend-item .trend-item-image-6, .trends .trend-item .trend-item-image-7, .trends .trend-item .trend-item-image-8 {
     width: 100%;
     height: 350px;
-    background-image: url("../../assets/images/trend1.png");
+    background-image: url("../../assets/images/lion1.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .popular-works .trends .trend-item .trend-item-image-2 {
-    background-image: url("../../assets/images/trend2.png");
+    background-image: url("../../assets/images/monkey1.png");
 }
 
 .popular-works .trends .trend-item .trend-item-image-3 {
-    background-image: url("../../assets/images/trend3.png");
+    background-image: url("../../assets/images/cat1.png");
 }
 
 .popular-works .trends .trend-item .trend-item-image-4 {
-    background-image: url("../../assets/images/trend4.png");
+    background-image: url("../../assets/images/squirrel1.png");
 }
 
 .popular-works .trends .trend-item .trend-item-image-5 {
-    background-image: url("../../assets/images/trend5.png");
+    background-image: url("../../assets/images/lion2.png");
 }
 
 .popular-works .trends .trend-item .trend-item-image-6 {
-    background-image: url("../../assets/images/trend6.png");
+    background-image: url("../../assets/images/monkey2.png");
 }
 
 .popular-works .trends .trend-item .trend-item-image-7 {
-    background-image: url("../../assets/images/trend7.png");
+    background-image: url("../../assets/images/monkey3.png");
 }
 
 .popular-works .trends .trend-item .trend-item-image-8 {
-    background-image: url("../../assets/images/trend8.png");
+    background-image: url("../../assets/images/tiger1.png");
 }
 
 .popular-works .trends .trend-item .trend-item-title {
