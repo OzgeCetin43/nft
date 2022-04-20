@@ -183,9 +183,13 @@
 }
 
 .products .product-item .title {
-    font-size: 1.1rem;
+    font-size: 1.5rem;
     color: #fff;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    width: 100%;
 }
 
 .products .product-item .info {
@@ -326,5 +330,9 @@
         width: 50px;
         height: 50px;
         padding: 5px;
+    }
+
+    .products .product-item .title {
+        font-size: 1.1rem;
     }
 }

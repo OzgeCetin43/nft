@@ -69,7 +69,7 @@ const Market = (props) => {
               return (
                 <div key={data.id} className="product-item">
                   <div className={data.image}/>
-                  <h2 className="title">{data.name}</h2>
+                  <Link to={"/nft/market/" + data.id} className="title">{data.name}</Link>
                   <div className="info">
                     <div className="creator">
                       <img src={data.creatorImage} alt="nft, ethereum, marketplace" className="creator-image"/>

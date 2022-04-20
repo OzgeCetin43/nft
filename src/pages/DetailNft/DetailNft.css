@@ -1,0 +1,215 @@
+.detail-container {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    margin: 40px 0;
+}
+
+.detail-container .left, .right {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: left;
+    text-align: center;
+}
+
+.detail-container .left .hero {
+    border: 1px solid rgba(211, 207, 200, 0.4);
+    border-radius: 4px;
+    box-shadow: 1px 1px 10px 1px rgba(255, 255, 255, 0.4);
+    background-color: #212121;
+    width: 90%;
+}
+
+.detail-container .right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.detail-container .right .title {
+    font-size: 2rem;
+    color: #d5f667;
+}
+
+.detail-container .right .info {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: auto;
+    margin-top: 10px;
+}
+
+.detail-container .right .info .info-item {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    background-color: #212121;
+    border-radius: 4px;
+    padding: 15px;
+}
+
+.detail-container .right .info .info-item i {
+    margin-right: 10px;
+}
+
+.detail-container .right .description {
+    text-align: left;
+    font-size: 1.1rem;
+    line-height: 2;
+}
+
+.detail-container .right .creator {
+    margin: 20px 0;
+    font-size: 1.1rem;
+    color: #d5f667;
+}
+
+.detail-container .right .creator-info {
+    display: flex;
+    align-items: center;
+}
+
+.detail-container .right .creator-info .creator-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.detail-container .right .creator-info .name {
+    margin-left: 10px;
+    font-size: 1.1rem;
+}
+
+.detail-container .right .bid-and-history {
+    display: flex;
+    align-items: center;
+}
+
+.detail-container .right .bid-and-history .bids, .history {
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    margin: 20px 0 0;
+    width: 100px;
+    color: #050505;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    background-color: #d5f667;
+}
+
+.detail-container .right .bid-and-history .bids {
+    margin-right: 10px;
+}
+
+.detail-container .right .bid-info, .history-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.detail-container .right .bid-info .bid-item, .history-info .history-item {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.detail-container .right .bid-info .bid-item .customer,  .history-info .history-item .customer {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+.detail-container .right .bid-info .bid-item .description-area, .history-info .history-item .description-area {
+    padding: 20px;
+    text-align: left;
+}
+
+.detail-container .right .bid-info .bid-item .description-area .description, .history-info .history-item .description-area .description {
+    font-size: 0.9rem;
+    color: #d3cfc8;
+}
+
+.detail-container .right .bid-info .bid-item .description-area .description .description-mark, .history-info .history-item .description-area .description .description-mark {
+    font-size: 1.1rem;
+    color: #fff;
+    font-weight: bold;
+}
+
+@media(max-width: 912px) {
+    .detail-container {
+        flex-direction: column;
+        align-items: center;
+        margin: 30px 0;
+    }
+    
+    .detail-container .left, .right {
+        width: 90%;
+    }
+
+    .detail-container .left .hero {
+        width: 90%
+    }
+
+    .detail-container .right {
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    .detail-container .right .title {
+        font-size: 1.5rem;
+    }
+
+    .detail-container .right .info {
+        justify-content: center;
+        margin: 20px 0;
+    }
+
+    .detail-container .right .info .info-item {
+        margin-right: 5px;
+        padding: 10px;
+    }
+
+    .detail-container .right .description {
+        text-align: center;
+        font-size: 0.9rem;
+        line-height: 2;
+    }
+
+    .detail-container .right .creator, .detail-container .right .creator-info .name, .detail-container .right .bid-info .bid-item .description-area .description .description-mark, .history-info .history-item .description-area .description .description-mark {
+        font-size: 0.9rem;
+    }
+    
+    .detail-container .right .creator-info .creator-image {
+        width: 30px;
+        height: 30px;
+    }
+
+    .detail-container .right .bid-and-history .bids, .history {
+        padding: 10px 10px;
+        font-size: 0.9rem;
+        margin: 20px 10px 0;
+    }
+    
+    .detail-container .right .bid-info .bid-item .description-area, .history-info .history-item .description-area {
+        padding: 10px;
+    }
+
+    .detail-container .right .bid-info, .history-info {
+        margin-top: 30px;
+    }
+
+    .detail-container .right .bid-info .bid-item, .history-info .history-item {
+        width: 100%;
+    }
+    
+    .detail-container .right .bid-info .bid-item .description-area .description, .history-info .history-item .description-area .description {
+        font-size: 0.75rem;
+        text-align: left;
+    }
+}
