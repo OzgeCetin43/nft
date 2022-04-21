@@ -88,6 +88,16 @@
 .detail-container .right .bid-and-history {
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.detail-container .right .bid-and-history .close {
+    font-size: 1rem;
+    padding: 10px;
+    border-radius: 50%;
+    color: #050505;
+    background-color: #d5f667;
 }
 
 .detail-container .right .bid-and-history .bids, .history {

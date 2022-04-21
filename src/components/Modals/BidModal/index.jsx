@@ -5,7 +5,7 @@ const BidModal = (props) => {
     return (
         <div className="place-bid-modal">
             <div className="place-bid-modal-inner">
-            <i class="ri-close-fill close" onClick={() => props.setBidIsActive(false)}></i>
+                <i class="ri-close-fill close" onClick={() => props.setBidIsActive(false)}></i>
                 <h1 className="title">Place a Bid</h1>
                 <p className="description">You must bid at least <b>11 ETH</b></p>
                 <input type="text" placeholder="00.00 ETH"/>

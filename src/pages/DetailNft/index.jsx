@@ -22,6 +22,11 @@ const DetailNft = (props) => {
     setBidIsShowable(false);
   }
 
+  const closeHandler = () => {
+    setHistoryIsShowable(false);
+    setBidIsShowable(false);
+  }
+
   return (
     <div className="detail-container">
       <div className="left">
@@ -50,8 +55,13 @@ const DetailNft = (props) => {
           <p className="name">{nft.creator}</p>
         </div>
         <div className="bid-and-history">
-          <button className="bids" onClick={bidShowHandler}>Bids</button>
-          <button className="history" onClick={historyShowHandler}>History</button>
+          <div>
+            <button className="bids" onClick={bidShowHandler}>Bids</button>
+            <button className="history" onClick={historyShowHandler}>History</button>
+          </div>
+          {
+            (bidIsShowable || historyIsShowable) && <i class="ri-close-fill close" onClick={closeHandler}></i>
+          }
         </div>  
         {
           bidIsShowable && <BidArea/>
