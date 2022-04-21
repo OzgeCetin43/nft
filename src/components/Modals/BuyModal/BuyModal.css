@@ -1,4 +1,4 @@
-.place-bid-modal {
+.buy-modal {
     position: fixed;
     top: 0;
     left: 0;
@@ -10,8 +10,8 @@
     justify-content: center;
 }
 
-.place-bid-modal .place-bid-modal-inner {
-    width: 25%;
+.buy-modal .buy-modal-inner {
+        width: 25%;
     min-height: 400px;
     background-color: #212121;
     border-radius: 4px;
@@ -22,7 +22,7 @@
     text-align: center;
 }
 
-.place-bid-modal .place-bid-modal-inner .close {
+.buy-modal .buy-modal-inner .close {
     position: absolute;
     top: -8px;
     right: -8px;
@@ -32,14 +32,34 @@
     border-radius: 50%;
 }
 
-.place-bid-modal .place-bid-modal-inner .title {
+.buy-modal .buy-modal-inner .title {
     text-align: center;
     margin: 30px 0;
     font-size: 2rem;
     color: #d5f667;
 }
 
-.place-bid-modal .place-bid-modal-inner input {
+.buy-modal .buy-modal-inner .info-area {
+    color: #d3cfc8;
+    padding: 10px;
+}
+
+.buy-modal .buy-modal-inner .info-area span {
+    color: #fff;
+    font-weight: bolder;
+}
+
+.buy-modal .buy-modal-inner .available {
+    color: #fff;
+    margin: 20px 0;
+}
+
+.buy-modal .buy-modal-inner .available span {
+    color: #d5f667;
+    font-size: 1.1rem;
+}
+
+.buy-modal .buy-modal-inner input {
     width: 80%;
     padding: 10px;
     border: 1px solid rgba(211, 207, 200, 0.4);
@@ -49,11 +69,7 @@
     color: #050505;
 }
 
-.place-bid-modal .place-bid-modal-inner .description b {
-    font-size: 1.25rem;
-}
-
-.place-bid-modal .place-bid-modal-inner .info {
+.buy-modal .buy-modal-inner .info {
     height: auto;
     margin: 4px auto;
     padding: 10px;
@@ -63,16 +79,16 @@
     width: 80%;
 }
 
-.place-bid-modal .place-bid-modal-inner .info p {
+.buy-modal .buy-modal-inner .info p {
     color: #d3cfc8;
 }
 
-.place-bid-modal .place-bid-modal-inner .info span {
+.buy-modal .buy-modal-inner .info span {
     color: #d5f667;
     font-size: 1.2rem;
 }
 
-.place-bid-modal .place-bid-modal-inner .bid-btn {
+.buy-modal .buy-modal-inner .buy-now-btn {
     background-color: #d5f667;
     width: 45%;
     padding: 20px;
@@ -85,17 +101,17 @@
 }
 
 @media(max-width: 912px) {
-    .place-bid-modal .place-bid-modal-inner {
+    .buy-modal .buy-modal-inner {
         width: 80%;
     }
 }
 
 @media(max-width: 600px) { 
-    .place-bid-modal .place-bid-modal-inner {
+    .buy-modal .buy-modal-inner {
         width: 90%;
     }
 
-    .place-bid-modal .place-bid-modal-inner .bid-btn {
+    .buy-modal .buy-modal-inner .buy-now-btn {
         padding: 10px;
     }
 }

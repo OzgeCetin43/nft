@@ -4,6 +4,9 @@ import { NFT_DATA } from "../../assets/data/data";
 import "./DetailNft.css";
 import BidArea from "../../components/BidArea";
 import HistoryArea from "../../components/HistoryArea";
+import eth from "../../assets/images/eth.png";
+import BidModal from "../../components/Modals/BidModal";
+import BuyModal from "../../components/Modals/BuyModal";
 
 const DetailNft = (props) => {
   const {id} = useParams();
@@ -11,6 +14,8 @@ const DetailNft = (props) => {
 
   const [bidIsShowable, setBidIsShowable] = useState(false);
   const [historyIsShowable, setHistoryIsShowable] = useState(false);
+  const [bidModalIsShowable, setBidModalIsShowable] = useState(false);
+  const [buyModalIsActive, setBuyModalIsActive] = useState(false);
 
   const bidShowHandler = () => {
     setBidIsShowable(true);
@@ -69,7 +74,24 @@ const DetailNft = (props) => {
         {
           historyIsShowable && <HistoryArea/>
         }
+        <small className="price">Price</small>
+        <div className="price-container">
+          <img src={eth} alt="ethereum, marketplace, nft" className="eth"/>
+          <span className="eth-price">10 ETH</span>
+          <span className="dollar-price">($30.254,5)</span>
+        </div>
+        <div className="buttons">
+          <button className="buy-btn" onClick={() => setBuyModalIsActive(true)}><i class="ri-shopping-cart-2-fill"></i> Buy Now</button>
+          <button className="bid-btn" onClick={() => setBidModalIsShowable(true)}><i class="ri-bit-coin-fill"></i> Place a Bid</button>
+          <button className="coffee-btn"><i class="ri-cup-fill"></i> Buy a Coffee</button>
+        </div>
       </div>
+      {
+        bidModalIsShowable && <BidModal setBidIsActive={setBidModalIsShowable}/>
+      }
+      {
+        buyModalIsActive&& <BuyModal name={nft.name} creator={nft.creator} setBuyIsActive={setBuyModalIsActive}/>
+      }
     </div>
   )
 }

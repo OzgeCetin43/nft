@@ -12,16 +12,16 @@ const BidModal = (props) => {
                 <p className="description">Enter Quantity, 7 Available</p>
                 <input type="text" placeholder="Quantity"/>
                 <div className="info">
-                <p>You must bid at least</p>
-                <span>11 ETH</span>
+                    <p>You must bid at least</p>
+                    <span>11 ETH</span>
                 </div>
                 <div className="info">
-                <p>Service Fee</p>
-                <span>0.56 ETH</span>
+                    <p>Service Fee</p>
+                    <span>0.56 ETH</span>
                 </div>
                 <div className="info">
-                <p>Total Bid Amount</p>
-                <span>11.56 ETH</span>
+                    <p>Total Bid Amount</p>
+                    <span>11.56 ETH</span>
                 </div>
                 <button className="bid-btn">Place a bid</button>
             </div>

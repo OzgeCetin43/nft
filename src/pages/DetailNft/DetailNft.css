@@ -87,9 +87,7 @@
 
 .detail-container .right .bid-and-history {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
+    align-items: flex-end;
 }
 
 .detail-container .right .bid-and-history .close {
@@ -97,12 +95,12 @@
     padding: 10px;
     border-radius: 50%;
     color: #050505;
+    font-weight: bolder;
     background-color: #d5f667;
 }
 
 .detail-container .right .bid-and-history .bids, .history {
     padding: 10px 20px;
-    font-size: 1.1rem;
     margin: 20px 0 0;
     width: 100px;
     color: #050505;
@@ -110,10 +108,70 @@
     border: none;
     border-radius: 4px;
     background-color: #d5f667;
+    margin-right: 10px;
 }
 
-.detail-container .right .bid-and-history .bids {
+.detail-container .right .price {
+    color: #d5f667;
+    margin: 20px 0 10px;
+    font-size: 1rem;
+}
+
+.detail-container .right .price-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.detail-container .right .price-container .eth {
+    height: 50px;
+    width: 50px;
+    position: relative;
+    left: -10px;
+}
+
+.detail-container .right .price-container .eth-price {
+    font-size: 1.4rem;
+    color: #fff;
+    font-weight: bold;
+}
+
+.detail-container .right .price-container .dollar-price {
+    margin-left: 10px;
+    color: #d3cfc8;
+}
+
+.detail-container .right .buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.detail-container .right .buttons i {
+    margin-right: 4px;
+}
+
+.detail-container .right .buttons .buy-btn, .bid-btn, .coffee-btn  {
+    padding: 20px;
     margin-right: 10px;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    color: #050505;
+}
+
+.detail-container .right .buttons .buy-btn {
+    background-color: #d5f667;
+}
+
+.detail-container .right .buttons .bid-btn {
+    background-color: #212121;
+    color: #fff;
+}
+
+.detail-container .right .buttons .coffee-btn {
+    background-color: #d3cfc8;
 }
 
 @media(max-width: 912px) {
@@ -167,7 +225,14 @@
 
     .detail-container .right .bid-and-history .bids, .history {
         padding: 10px 10px;
-        font-size: 0.9rem;
         margin: 20px 10px 0;
+    }
+}
+
+@media(max-width: 540px) {
+    .detail-container .right .buttons .buy-btn, .bid-btn, .coffee-btn {
+        margin: 5px;
+        padding: 10px;
+        font-size: 0.75rem;
     }
 }
