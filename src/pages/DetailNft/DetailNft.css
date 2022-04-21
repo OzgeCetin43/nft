@@ -106,41 +106,6 @@
     margin-right: 10px;
 }
 
-.detail-container .right .bid-info, .history-info {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.detail-container .right .bid-info .bid-item, .history-info .history-item {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-}
-
-.detail-container .right .bid-info .bid-item .customer,  .history-info .history-item .customer {
-    height: 50px;
-    width: 50px;
-    border-radius: 50%;
-}
-
-.detail-container .right .bid-info .bid-item .description-area, .history-info .history-item .description-area {
-    padding: 20px;
-    text-align: left;
-}
-
-.detail-container .right .bid-info .bid-item .description-area .description, .history-info .history-item .description-area .description {
-    font-size: 0.9rem;
-    color: #d3cfc8;
-}
-
-.detail-container .right .bid-info .bid-item .description-area .description .description-mark, .history-info .history-item .description-area .description .description-mark {
-    font-size: 1.1rem;
-    color: #fff;
-    font-weight: bold;
-}
-
 @media(max-width: 912px) {
     .detail-container {
         flex-direction: column;
@@ -181,7 +146,7 @@
         line-height: 2;
     }
 
-    .detail-container .right .creator, .detail-container .right .creator-info .name, .detail-container .right .bid-info .bid-item .description-area .description .description-mark, .history-info .history-item .description-area .description .description-mark {
+    .detail-container .right .creator, .detail-container .right .creator-info .name {
         font-size: 0.9rem;
     }
     
@@ -194,22 +159,5 @@
         padding: 10px 10px;
         font-size: 0.9rem;
         margin: 20px 10px 0;
-    }
-    
-    .detail-container .right .bid-info .bid-item .description-area, .history-info .history-item .description-area {
-        padding: 10px;
-    }
-
-    .detail-container .right .bid-info, .history-info {
-        margin-top: 30px;
-    }
-
-    .detail-container .right .bid-info .bid-item, .history-info .history-item {
-        width: 100%;
-    }
-    
-    .detail-container .right .bid-info .bid-item .description-area .description, .history-info .history-item .description-area .description {
-        font-size: 0.75rem;
-        text-align: left;
     }
 }

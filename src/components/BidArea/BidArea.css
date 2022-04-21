@@ -1,0 +1,54 @@
+.bid-info, .history-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.bid-info .bid-item {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.bid-info .bid-item .customer {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+.bid-info .bid-item .description-area {
+    padding: 20px;
+    text-align: left;
+}
+
+.bid-info .bid-item .description-area .description {
+    font-size: 0.9rem;
+    color: #d3cfc8;
+}
+
+.bid-info .bid-item .description-area .description .description-mark {
+    font-size: 1.1rem;
+    color: #fff;
+    font-weight: bold;
+}
+
+@media(max-width: 912px) { 
+    .bid-info .bid-item .description-area .description .description-mark {
+        font-size: 0.9rem;
+    }
+
+    .bid-info .bid-item .description-area {
+        padding: 10px;
+    }
+
+    .bid-info {
+        margin-top: 30px;
+    }
+    
+    .bid-info .bid-item .description-area .description {
+        font-size: 0.75rem;
+        text-align: left;
+    }
+}
