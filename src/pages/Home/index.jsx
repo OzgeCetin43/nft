@@ -1,10 +1,9 @@
 import React, { useState, useRef, useEffect } from "react";
+import HistoryModal from "../../components/Modals/HistoryModal";
+import BidModal from "../../components/Modals/BidModal";
 import "./Home.css";
 import hero from "../../assets/images/hero.png";
 import { Link } from "react-router-dom";
-import creator1 from "../../assets/images/creator1.jpg";
-import creator2 from "../../assets/images/creator2.jpg";
-import creator3 from "../../assets/images/creator3.jpg";
 import eth from "../../assets/images/eth.png"; 
 import dog from "../../assets/images/dog.png";
 import customer1 from "../../assets/images/customer1.jpg";
@@ -14,6 +13,10 @@ import seller1 from "../../assets/images/seller1.png";
 import seller2 from "../../assets/images/seller2.png";
 import seller3 from "../../assets/images/seller3.png";
 import seller4 from "../../assets/images/seller4.png";
+import { TRENDS } from "../../assets/data/trends";
+import { STEPS } from "../../assets/data/steps";
+import { TESTIMONIALS } from "../../assets/data/testimonials";
+import { SELLERS } from "../../assets/data/seller";
 
 const Home = (props) => {
   const [days, setDays] = useState("00");
@@ -130,398 +133,101 @@ const Home = (props) => {
         <h1 className="title">Trending this week</h1>
         <p className="description">Various kinds of Artwork categories that are trending this week. The trend will be reset every week. Don't miss out on the best artworks every week!</p>  
         {
-          historyIsActive && <div className="history-modal">
-            <div className="history-modal-inner">
-              <i class="ri-close-fill close" onClick={() => setHistoryIsActive(false)}></i>
-              <h1 className="title">History</h1>
-              <div className="bid-info">
-                <img src={customer1} alt="nft, marketplace, ethereum" className="customer-image"/>
-                <div className="customer-info">
-                  <p className="description">Bid accepted by</p>   
-                  <p className="name">Derek White</p>
-                  <small className="date">17/04/2022, 17:28</small>           
-                </div>
-                <i class="ri-check-double-line check"></i>
-              </div>
-              <div className="bid-info">
-                <img src={customer2} alt="nft, marketplace, ethereum" className="customer-image"/>
-                <div className="customer-info">
-                  <p className="description">Bid accepted by</p>   
-                  <p className="name">Mary Adel</p>
-                  <small className="date">17/04/2022, 17:30</small>           
-                </div>
-                <i class="ri-check-double-line check"></i>
-              </div>
-            </div>
-          </div>
+          historyIsActive && <HistoryModal setHistoryIsActive={setHistoryIsActive}/>
         }
         <div className="trends">
-          <div className="trend-item">
-            <div className="trend-item-image-1"/>
-            <p className="trend-item-title">Trend #1</p>
-            <div className="trend-item-prices">
-              <div>
-                <p className="eth">10 ETH</p>
-                <p className="dollar">$30.254,5</p>
-              </div>
-              <p className="last-bid">Last bid: <span>11 ETH</span></p>
-              <img src={eth} className="eth-logo" alt="ethereum, price, nft"/>
-            </div>
-            <div className="trend-item-creator">
-              <div className="trend-item-creator-inner">
-                <img src={creator1} alt="creator, nft, marketplace, ethereum" className="trend-item-creator-image"/>
-                <div>
-                  <p className="created-by">Created by</p>
-                  <p className="creator">Smith Wright</p>
+          {
+            TRENDS.map(data => {
+              return (
+                <div className="trend-item" key={data.id}>
+                  <div className={data.className}/>
+                  <p className="trend-item-title">{data.title}</p>
+                  <div className="trend-item-prices">
+                    <div>
+                      <p className="eth">{data.eth} ETH</p>
+                      <p className="dollar">${data.dollar}</p>
+                    </div>
+                    <p className="last-bid">Last bid: <span>{data.lastBid} ETH</span></p>
+                    <img src={eth} className="eth-logo" alt="ethereum, price, nft"/>
+                  </div>
+                  <div className="trend-item-creator">
+                    <div className="trend-item-creator-inner">
+                      <img src={data.creatorImage} alt="creator, nft, marketplace, ethereum" className="trend-item-creator-image"/>
+                      <div>
+                        <p className="created-by">Created by</p>
+                        <p className="creator">{data.creatorName}</p>
+                      </div>
+                    </div>
+                    <i class="ri-heart-fill heart"></i>
+                  </div>
+                  <div className="buttons">
+                    <button className="bid-btn" onClick={() => setBidIsActive(true)}>Place a bid</button>
+                    <button className="history-btn" onClick={() => setHistoryIsActive(true)}>History</button>
+                  </div>
                 </div>
-              </div>
-              <i class="ri-heart-fill heart"></i>
-            </div>
-            <div className="buttons">
-              <button className="bid-btn" onClick={() => setBidIsActive(true)}>Place a bid</button>
-              <button className="history-btn" onClick={() => setHistoryIsActive(true)}>History</button>
-            </div>
-          </div>
-          <div className="trend-item">
-            <div className="trend-item-image-2"/>
-            <p className="trend-item-title">Trend #2</p>
-            <div className="trend-item-prices">
-              <div>
-                <p className="eth">10 ETH</p>
-                <p className="dollar">$30.254,5</p>
-              </div>
-              <p className="last-bid">Last bid: <span>11 ETH</span></p>
-              <img src={eth} className="eth-logo" alt="ethereum, price, nft"/>
-            </div>
-            <div className="trend-item-creator">
-              <div className="trend-item-creator-inner">
-                <img src={creator2} alt="creator, nft, marketplace, ethereum" className="trend-item-creator-image"/>
-                <div>
-                  <p className="created-by">Created by</p>
-                  <p className="creator">Smith Wright</p>
-                </div>
-              </div>
-              <i class="ri-heart-fill heart"></i>
-            </div>
-            <div className="buttons">
-              <button className="bid-btn" onClick={() => setBidIsActive(true)}>Place a bid</button>
-              <button className="history-btn" onClick={() => setHistoryIsActive(true)}>History</button>
-            </div>
-          </div>
-          <div className="trend-item">
-            <div className="trend-item-image-3"/>
-            <p className="trend-item-title">Trend #3</p>
-            <div className="trend-item-prices">
-              <div>
-                <p className="eth">10 ETH</p>
-                <p className="dollar">$30.254,5</p>
-              </div>
-              <p className="last-bid">Last bid: <span>11 ETH</span></p>
-              <img src={eth} className="eth-logo" alt="ethereum, price, nft"/>
-            </div>
-            <div className="trend-item-creator">
-              <div className="trend-item-creator-inner">
-                <img src={creator3} alt="creator, nft, marketplace, ethereum" className="trend-item-creator-image"/>
-                <div>
-                  <p className="created-by">Created by</p>
-                  <p className="creator">Smith Wright</p>
-                </div>
-              </div>
-              <i class="ri-heart-fill heart"></i>
-            </div>
-            <div className="buttons">
-              <button className="bid-btn" onClick={() => setBidIsActive(true)}>Place a bid</button>
-              <button className="history-btn" onClick={() => setHistoryIsActive(true)}>History</button>
-            </div>
-          </div>
-          <div className="trend-item">
-            <div className="trend-item-image-4"/>
-            <p className="trend-item-title">Trend #4</p>
-            <div className="trend-item-prices">
-              <div>
-                <p className="eth">10 ETH</p>
-                <p className="dollar">$30.254,5</p>
-              </div>
-              <p className="last-bid">Last bid: <span>11 ETH</span></p>
-              <img src={eth} className="eth-logo" alt="ethereum, price, nft"/>
-            </div>
-            <div className="trend-item-creator">
-              <div className="trend-item-creator-inner">
-                <img src={creator1} alt="creator, nft, marketplace, ethereum" className="trend-item-creator-image"/>
-                <div>
-                  <p className="created-by">Created by</p>
-                  <p className="creator">Smith Wright</p>
-                </div>
-              </div>
-              <i class="ri-heart-fill heart"></i>
-            </div>
-            <div className="buttons">
-              <button className="bid-btn" onClick={() => setBidIsActive(true)}>Place a bid</button>
-              <button className="history-btn" onClick={() => setHistoryIsActive(true)}>History</button>
-            </div>
-          </div>
-          <div className="trend-item">
-            <div className="trend-item-image-5"/>
-            <p className="trend-item-title">Trend #5</p>
-            <div className="trend-item-prices">
-              <div>
-                <p className="eth">10 ETH</p>
-                <p className="dollar">$30.254,5</p>
-              </div>
-              <p className="last-bid">Last bid: <span>11 ETH</span></p>
-              <img src={eth} className="eth-logo" alt="ethereum, price, nft"/>
-            </div>
-            <div className="trend-item-creator">
-              <div className="trend-item-creator-inner">
-                <img src={creator2} alt="creator, nft, marketplace, ethereum" className="trend-item-creator-image"/>
-                <div>
-                  <p className="created-by">Created by</p>
-                  <p className="creator">Smith Wright</p>
-                </div>
-              </div>
-              <i class="ri-heart-fill heart"></i>
-            </div>
-            <div className="buttons">
-              <button className="bid-btn" onClick={() => setBidIsActive(true)}>Place a bid</button>
-              <button className="history-btn" onClick={() => setHistoryIsActive(true)}>History</button>
-            </div>
-          </div>
-          <div className="trend-item">
-            <div className="trend-item-image-6"/>
-            <p className="trend-item-title">Trend #6</p>
-            <div className="trend-item-prices">
-              <div>
-                <p className="eth">10 ETH</p>
-                <p className="dollar">$30.254,5</p>
-              </div>
-              <p className="last-bid">Last bid: <span>11 ETH</span></p>
-              <img src={eth} className="eth-logo" alt="ethereum, price, nft"/>
-            </div>
-            <div className="trend-item-creator">
-              <div className="trend-item-creator-inner">
-                <img src={creator3} alt="creator, nft, marketplace, ethereum" className="trend-item-creator-image"/>
-                <div>
-                  <p className="created-by">Created by</p>
-                  <p className="creator">Smith Wright</p>
-                </div>
-              </div>
-              <i class="ri-heart-fill heart"></i>
-            </div>
-            <div className="buttons">
-              <button className="bid-btn" onClick={() => setBidIsActive(true)}>Place a bid</button>
-              <button className="history-btn" onClick={() => setHistoryIsActive(true)}>History</button>
-            </div>
-          </div>
-          <div className="trend-item">
-            <div className="trend-item-image-7"/>
-            <p className="trend-item-title">Trend #7</p>
-            <div className="trend-item-prices">
-              <div>
-                <p className="eth">10 ETH</p>
-                <p className="dollar">$30.254,5</p>
-              </div>
-              <p className="last-bid">Last bid: <span>11 ETH</span></p>
-              <img src={eth} className="eth-logo" alt="ethereum, price, nft"/>
-            </div>
-            <div className="trend-item-creator">
-              <div className="trend-item-creator-inner">
-                <img src={creator1} alt="creator, nft, marketplace, ethereum" className="trend-item-creator-image"/>
-                <div>
-                  <p className="created-by">Created by</p>
-                  <p className="creator">Smith Wright</p>
-                </div>
-              </div>
-              <i class="ri-heart-fill heart"></i>
-            </div>
-            <div className="buttons">
-              <button className="bid-btn" onClick={() => setBidIsActive(true)}>Place a bid</button>
-              <button className="history-btn" onClick={() => setHistoryIsActive(true)}>History</button>
-            </div>
-          </div>
-          <div className="trend-item">
-            <div className="trend-item-image-8"/>
-            <p className="trend-item-title">Trend #8</p>
-            <div className="trend-item-prices">
-              <div>
-                <p className="eth">10 ETH</p>
-                <p className="dollar">$30.254,5</p>
-              </div>
-              <p className="last-bid">Last bid: <span>11 ETH</span></p>
-              <img src={eth} className="eth-logo" alt="ethereum, price, nft"/>
-            </div>
-            <div className="trend-item-creator">
-              <div className="trend-item-creator-inner">
-                <img src={creator2} alt="creator, nft, marketplace, ethereum" className="trend-item-creator-image"/>
-                <div>
-                  <p className="created-by">Created by</p>
-                  <p className="creator">Smith Wright</p>
-                </div>
-              </div>
-              <i class="ri-heart-fill heart"></i>
-            </div>
-            <div className="buttons">
-              <button className="bid-btn" onClick={() => setBidIsActive(true)}>Place a bid</button>
-              <button className="history-btn" onClick={() => setHistoryIsActive(true)}>History</button>
-            </div>
-          </div>
+              )
+            })
+          }
         </div>
       </div>
       {
-        bidIsActive && <div className="place-bid-modal">
-            <div className="place-bid-modal-inner">
-            <i class="ri-close-fill close" onClick={() => setBidIsActive(false)}></i>
-              <h1 className="title">Place a Bid</h1>
-              <p className="description">You must bid at least <b>11 ETH</b></p>
-              <input type="text" placeholder="00.00 ETH"/>
-              <p className="description">Enter Quantity, 7 Available</p>
-              <input type="text" placeholder="Quantity"/>
-              <div className="info">
-                <p>You must bid at least</p>
-                <span>11 ETH</span>
-              </div>
-              <div className="info">
-                <p>Service Fee</p>
-                <span>0.56 ETH</span>
-              </div>
-              <div className="info">
-                <p>Total Bid Amount</p>
-                <span>11.56 ETH</span>
-              </div>
-              <button className="bid-btn">Place a bid</button>
-            </div>
-          </div>
+        bidIsActive && <BidModal setBidIsActive={setBidIsActive}/>
       }
       <div className="more-container">
         <Link to="/nft/market" className="more-btn">More</Link>
       </div>
       <div className="info">
-        <div className="info-container">
-          <i class="ri-wallet-line wallet"></i>
-          <p className="info-description">Connect your Wallet</p>
-          <p className="info-description-long">Powerful features and inclusions, which makes NFTs standout, easily customizable and scalable.</p>
-        </div>
-        <div className="info-container">
-          <i class="ri-stack-line stack"></i>
-          <p className="info-description">Create a Collection</p>
-          <p className="info-description-long">A great collection of beautiful website templates for your need. Choose the best suitable template.</p>
-        </div>
-        <div className="info-container">
-          <i class="ri-folder-add-line add"></i>
-          <p className="info-description">Add New NFTs</p>
-          <p className="info-description-long">We've made the template fully responsive, so it looks great on all devices: desktop, tables and mobile.</p>
-        </div>
-        <div className="info-container">
-          <i class="ri-shopping-cart-line chart"></i>
-          <p className="info-description">Ready for Sale</p>
-          <p className="info-description-long">I throw myself down amoung the tall grass by the stream as I lie close the earth NFT's.</p>
-        </div>
+        {
+          STEPS.map(data => {
+            return (
+              <div className="info-container" key={data.id}>
+                <img src={data.icon} alt="nft, ethereum, marketplace" className="icon"/>
+                <p className="info-description">{data.title}</p>
+                <p className="info-description-long">{data.description}</p>
+              </div>
+            )
+          })
+        }
       </div>
       <div className="testimonials">
         <h2 className="title">What Customers're Saying</h2>
         <p className="description">More than 170 countries' buyers and sellers have chosen us. They are very happy for care of us. Here are some client's testimony. Be a part of us.</p>
         <div className="testimonials-customers">
-          <div className="customer">
-            <i class="ri-double-quotes-l quote"></i>
-            <p className="comment">The best marketplace for NFTs. They have a huge collection of beautiful digital art, and it is super easy to sell and buy your NFTs here.</p>
-            <div className="customer-info">
-              <img src={customer1} alt="customer, nft, marketplace, ethereum" className="customer-image"/>
-              <span>Alex - Canada</span>
-            </div>
-          </div>
-          <div className="customer">
-            <i class="ri-double-quotes-l quote"></i>
-            <p className="comment">The best marketplace for NFTs. They have a huge collection of beautiful digital art, and it is super easy to sell and buy your NFTs here.</p>
-            <div className="customer-info">
-              <img src={customer2} alt="customer, nft, marketplace, ethereum" className="customer-image"/>
-              <span>Mary - USA</span>
-            </div>
-          </div>
-          <div className="customer">
-            <i class="ri-double-quotes-l quote"></i>
-            <p className="comment">The best marketplace for NFTs. They have a huge collection of beautiful digital art, and it is super easy to sell and buy your NFTs here.</p>
-            <div className="customer-info">
-              <img src={customer3} alt="customer, nft, marketplace, ethereum" className="customer-image"/>
-              <span>Tom - Italy</span>
-            </div>
-          </div>
+          {
+            TESTIMONIALS.map(data => {
+              return (
+                <div className="customer" key={data.id}>
+                  <i class="ri-double-quotes-l quote"></i>
+                  <p className="comment">{data.comment}</p>
+                  <div className="customer-info">
+                    <img src={data.customerImage} alt="customer, nft, marketplace, ethereum" className="customer-image"/>
+                    <span>{data.customerName}</span>
+                  </div>
+                </div>     
+              )
+            })
+          }
         </div>
       </div>
       <div className="seller">
         <small className="subtitle">Top Artists</small>
         <h2 className="title">Creative Authors</h2>
         <div className="seller-container">
-          <div className="seller-item">
-            <img src={seller1} alt="seller, nft, marketplace, ethereum" className="seller-image"/>
-            <div className="seller-info">
-              <h3 className="name">Danny Green</h3>
-              <p className="product-count">Product: 06</p>
-              <b className="price">Earned: 24.5 ETH</b>
-            </div>
-            <h1 className="rank">1</h1>
-          </div>
-          <div className="seller-item">
-            <img src={seller2} alt="seller, nft, marketplace, ethereum" className="seller-image"/>
-            <div className="seller-info">
-              <h3 className="name">Ben Willer</h3>
-              <p className="product-count">Product: 36</p>
-              <b className="price">Earned: 84.5 ETH</b>
-            </div>
-            <h1 className="rank">2</h1>
-          </div>
-          <div className="seller-item">
-            <img src={seller3} alt="seller, nft, marketplace, ethereum" className="seller-image"/>
-            <div className="seller-info">
-              <h3 className="name">Mary Grey</h3>
-              <p className="product-count">Product: 17</p>
-              <b className="price">Earned: 44.5 ETH</b>
-            </div>
-            <h1 className="rank">3</h1>
-          </div>
-          <div className="seller-item">
-            <img src={seller4} alt="seller, nft, marketplace, ethereum" className="seller-image"/>
-            <div className="seller-info">
-              <h3 className="name">Tom Adam</h3>
-              <p className="product-count">Product: 43</p>
-              <b className="price">Earned: 39.5 ETH</b>
-            </div>
-            <h1 className="rank">4</h1>
-          </div>
-          <div className="seller-item">
-            <img src={seller1} alt="seller, nft, marketplace, ethereum" className="seller-image"/>
-            <div className="seller-info">
-              <h3 className="name">Danny Green</h3>
-              <p className="product-count">Product: 06</p>
-              <b className="price">Earned: 24.5 ETH</b>
-            </div>
-            <h1 className="rank">5</h1>
-          </div>
-          <div className="seller-item">
-            <img src={seller2} alt="seller, nft, marketplace, ethereum" className="seller-image"/>
-            <div className="seller-info">
-              <h3 className="name">Ben Willer</h3>
-              <p className="product-count">Product: 36</p>
-              <b className="price">Earned: 84.5 ETH</b>
-            </div>
-            <h1 className="rank">6</h1>
-          </div>
-          <div className="seller-item">
-            <img src={seller3} alt="seller, nft, marketplace, ethereum" className="seller-image"/>
-            <div className="seller-info">
-              <h3 className="name">Mary Grey</h3>
-              <p className="product-count">Product: 17</p>
-              <b className="price">Earned: 44.5 ETH</b>
-            </div>
-            <h1 className="rank">7</h1>
-          </div>
-          <div className="seller-item">
-            <img src={seller4} alt="seller, nft, marketplace, ethereum" className="seller-image"/>
-            <div className="seller-info">
-              <h3 className="name">Tom Adam</h3>
-              <p className="product-count">Product: 43</p>
-              <b className="price">Earned: 39.5 ETH</b>
-            </div>
-            <h1 className="rank">8</h1>
-          </div>
+          {
+            SELLERS.map(data => {
+              return (
+                <div className="seller-item" key={data.id}>
+                  <img src={data.image} alt="seller, nft, marketplace, ethereum" className="seller-image"/>
+                  <div className="seller-info">
+                    <h3 className="name">{data.name}</h3>
+                    <p className="product-count">Product: {data.productCount}</p>
+                    <b className="price">Earned: {data.earned} ETH</b>
+                  </div>
+                  <h1 className="rank">{data.id}</h1>
+                </div>
+              )
+            })
+          }
         </div>
       </div>
     </>
