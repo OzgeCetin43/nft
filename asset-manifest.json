@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/nft/static/css/main.825ab67a.css",
-    "main.js": "/nft/static/js/main.410aaf66.js",
+    "main.css": "/nft/static/css/main.733e5e9b.css",
+    "main.js": "/nft/static/js/main.a3113f66.js",
     "static/media/creator2.jpg": "/nft/static/media/creator2.962b6cc852bff6db04e0.jpg",
     "static/media/creator1.jpg": "/nft/static/media/creator1.600d72e771f3dc8c525c.jpg",
     "static/media/remixicon.svg?t=1590207869815": "/nft/static/media/remixicon.9cedd2150922ead84869.svg",
@@ -27,6 +27,7 @@
     "static/media/dog.png": "/nft/static/media/dog.67f6addc8a84c7ee8293.png",
     "static/media/remixicon.woff?t=1590207869815": "/nft/static/media/remixicon.8d09fa11700ed63cf96e.woff",
     "static/media/remixicon.woff2?t=1590207869815": "/nft/static/media/remixicon.90668f6f9b3c2c18a090.woff2",
+    "static/media/coffee.png": "/nft/static/media/coffee.bda2a954f5692f0b5d92.png",
     "static/media/eth.png": "/nft/static/media/eth.4aa4d7e0e1c35331bd89.png",
     "static/media/icon1.png": "/nft/static/media/icon1.04e4d160f46c180f2ca5.png",
     "static/media/icon2.png": "/nft/static/media/icon2.c720ff9b56884e346c8b.png",
@@ -34,11 +35,11 @@
     "static/media/icon4.png": "/nft/static/media/icon4.3094f64e3e0c0f58a345.png",
     "static/media/seller3.png": "/nft/static/media/seller3.5b15672175d585f79182.png",
     "index.html": "/nft/index.html",
-    "main.825ab67a.css.map": "/nft/static/css/main.825ab67a.css.map",
-    "main.410aaf66.js.map": "/nft/static/js/main.410aaf66.js.map"
+    "main.733e5e9b.css.map": "/nft/static/css/main.733e5e9b.css.map",
+    "main.a3113f66.js.map": "/nft/static/js/main.a3113f66.js.map"
   },
   "entrypoints": [
-    "static/css/main.825ab67a.css",
-    "static/js/main.410aaf66.js"
+    "static/css/main.733e5e9b.css",
+    "static/js/main.a3113f66.js"
   ]
 }
