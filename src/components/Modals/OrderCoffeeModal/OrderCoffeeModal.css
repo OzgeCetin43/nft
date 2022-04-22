@@ -1,0 +1,141 @@
+.order-coffee-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(5, 5, 5, 0.7);
+    display: flex;
+    align-items: center;    
+    justify-content: center;
+    z-index: 100000;
+}
+
+.order-coffee-modal .order-coffee-modal-inner {
+    width: 50%;
+    min-height: 400px;
+    background-color: #212121;
+    border-radius: 4px;
+    border: 1px solid rgba(211, 207, 200, 0.4);
+    box-shadow: 1px 1px 10px 1px rgba(255, 255, 255, 0.4);
+    position: relative;
+    color: #fff;
+    text-align: center;
+    display: flex;
+}
+
+.order-coffee-modal .order-coffee-modal-inner .close {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    padding: 10px;
+    background-color: #d5f667;
+    color: #050505;
+    border-radius: 50%;
+}
+
+.order-coffee-modal .order-coffee-modal-inner .order-right {
+    width: 70%;
+    padding: 10px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.order-coffee-modal .order-coffee-modal-inner .order-right .order-star {
+    width: 50%;
+    margin: 10px auto;
+}
+
+.order-coffee-modal .order-coffee-modal-inner .order-right .thanks-title {
+    text-align: center;
+    width: 100%;
+    color: #d5f667;
+    font-size: 2.5rem;
+    line-height: 2;
+}
+
+.order-coffee-modal .order-coffee-modal-inner .order-right .thanks-description {
+    font-size: 1.2rem;
+    line-height: 2;
+}
+
+.order-coffee-modal .order-coffee-modal-inner .order-right input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid rgba(211, 207, 200, 0.4);
+    border-radius: 4px;
+    margin: 10px 0;
+    outline: none;
+    color: #050505;
+}
+
+.order-coffee-modal .order-coffee-modal-inner .order-right .order-coffee-btn {
+    background-color: #d5f667;
+    color: #050505;
+    border-radius: 4px;
+    padding: 20px;
+    font-size: 1rem;
+    outline: none;
+    border: none;
+    width: 50%;
+    margin: auto;
+}
+
+.order-coffee-modal .order-coffee-modal-inner .order-left {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.order-coffee-modal .order-coffee-modal-inner .order-left img {
+    width: 100%;
+}
+
+@media(max-width: 912px) {
+    .order-coffee-modal .order-coffee-modal-inner {
+        width: 90%;
+    }
+
+    .order-coffee-modal .order-coffee-modal-inner .order-right .thanks-title {
+        font-size: 2rem;
+    }
+
+    .order-coffee-modal .order-coffee-modal-inner .order-right .thanks-description {
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+
+    .order-coffee-modal .order-coffee-modal-inner .order-right .order-coffee-btn {
+        padding: 10px;
+        font-size: 0.8rem;
+        margin: 0 auto;
+    }
+}
+
+@media(max-width: 640px) {
+    .order-coffee-modal .order-coffee-modal-inner {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .order-coffee-modal .order-coffee-modal-inner .order-right, .order-left {
+        width: 100%;
+    }
+
+    .order-coffee-modal .order-coffee-modal-inner .order-right .thanks-title {
+        font-size: 1.5rem;
+    }
+
+    .order-coffee-modal .order-coffee-modal-inner .order-right .thanks-description {
+        font-size: 0.9rem;
+        line-height: 1.5;
+    }
+
+    .order-coffee-modal .order-coffee-modal-inner .order-right .order-coffee-btn {
+        padding: 10px;
+        font-size: 0.8rem;
+    }
+}

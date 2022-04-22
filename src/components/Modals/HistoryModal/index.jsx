@@ -9,16 +9,16 @@ const HistoryModal = (props) => {
             <div className="history-modal-inner">
                 <i class="ri-close-fill close" onClick={() => props.setHistoryIsActive(false)}></i>
                 <h1 className="title">History</h1>
-                <div className="bid-info">
-                <img src={customer1} alt="nft, marketplace, ethereum" className="customer-image"/>
-                <div className="customer-info">
-                    <p className="description">Bid accepted by</p>   
-                    <p className="name">Derek White</p>
-                    <small className="date">17/04/2022, 17:28</small>           
+                <div className="history-info-area">
+                    <img src={customer1} alt="nft, marketplace, ethereum" className="customer-image"/>
+                    <div className="customer-info">
+                        <p className="description">Bid accepted by</p>   
+                        <p className="name">Derek White</p>
+                        <small className="date">17/04/2022, 17:28</small>           
+                    </div>
+                    <i class="ri-check-double-line check"></i>
                 </div>
-                <i class="ri-check-double-line check"></i>
-                </div>
-                <div className="bid-info">
+                <div className="history-info-area">
                 <img src={customer2} alt="nft, marketplace, ethereum" className="customer-image"/>
                 <div className="customer-info">
                     <p className="description">Bid accepted by</p>   

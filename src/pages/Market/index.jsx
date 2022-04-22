@@ -4,9 +4,11 @@ import hero from "../../assets/images/market-hero.png";
 import eth from "../../assets/images/eth.png";
 import { Link } from "react-router-dom";
 import {NFT_DATA} from "../../assets/data/data";
+import BidModal from "../../components/Modals/BidModal";
 
 const Market = (props) => {
   const [filterAreaShowable, setFilterAreaShowable] = useState(false);
+  const [bidModalIsShowable, setBidModalIsShowable] = useState(false);
 
   return (
     <>
@@ -86,12 +88,15 @@ const Market = (props) => {
                     </div>
                     <img src={eth} alt="nft, marketplace, ethereum" className="eth"/>
                   </div>
-                  <button className="bid-btn">Place a Bid</button>
+                  <button className="bid-btn" onClick={() => setBidModalIsShowable(true)}>Place a Bid</button>
                 </div>
               )
             })
           }
         </div>
+        {
+          bidModalIsShowable && <BidModal setBidIsActive={setBidModalIsShowable}/>
+        }
        </div>
     </>
   )

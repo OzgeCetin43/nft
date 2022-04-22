@@ -7,6 +7,7 @@ import HistoryArea from "../../components/HistoryArea";
 import eth from "../../assets/images/eth.png";
 import BidModal from "../../components/Modals/BidModal";
 import BuyModal from "../../components/Modals/BuyModal";
+import OrderCoffeeModal from "../../components/Modals/OrderCoffeeModal";
 
 const DetailNft = (props) => {
   const {id} = useParams();
@@ -16,6 +17,7 @@ const DetailNft = (props) => {
   const [historyIsShowable, setHistoryIsShowable] = useState(false);
   const [bidModalIsShowable, setBidModalIsShowable] = useState(false);
   const [buyModalIsActive, setBuyModalIsActive] = useState(false);
+  const [orderCoffeeModalIsActive, setOrderCoffeeModalIsActive] = useState(false);
 
   const bidShowHandler = () => {
     setBidIsShowable(true);
@@ -83,7 +85,7 @@ const DetailNft = (props) => {
         <div className="buttons">
           <button className="buy-btn" onClick={() => setBuyModalIsActive(true)}><i class="ri-shopping-cart-2-fill"></i> Buy Now</button>
           <button className="bid-btn" onClick={() => setBidModalIsShowable(true)}><i class="ri-bit-coin-fill"></i> Place a Bid</button>
-          <button className="coffee-btn"><i class="ri-cup-fill"></i> Buy a Coffee</button>
+          <button className="coffee-btn" onClick={() => setOrderCoffeeModalIsActive(true)}><i class="ri-cup-fill"></i> Order Coffee</button>
         </div>
       </div>
       {
@@ -91,6 +93,9 @@ const DetailNft = (props) => {
       }
       {
         buyModalIsActive&& <BuyModal name={nft.name} creator={nft.creator} setBuyIsActive={setBuyModalIsActive}/>
+      }
+      {
+        orderCoffeeModalIsActive && <OrderCoffeeModal setBidIsActive={setOrderCoffeeModalIsActive}/>
       }
     </div>
   )
