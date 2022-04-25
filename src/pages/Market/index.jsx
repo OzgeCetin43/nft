@@ -9,6 +9,22 @@ import BidModal from "../../components/Modals/BidModal";
 const Market = (props) => {
   const [filterAreaShowable, setFilterAreaShowable] = useState(false);
   const [bidModalIsShowable, setBidModalIsShowable] = useState(false);
+  const [filteredData, setFilteredData] = useState(NFT_DATA);
+
+  const sortHandler = (event) => {
+    let filteredValues = NFT_DATA.filter(item => item.level === event.target.value);
+    setFilteredData(filteredValues);
+  }
+
+  const categoryHandler = (event) => {
+    let filteredValues = NFT_DATA.filter(item => item.name.toLowerCase().includes(event.target.value));
+    setFilteredData(filteredValues);
+  }
+
+  const itemsHandler = (event) => {
+    let filteredValues = NFT_DATA.filter(item => item.bundleOrSingle ===  event.target.value);
+    setFilteredData(filteredValues);
+  }
 
   return (
     <>
@@ -45,19 +61,19 @@ const Market = (props) => {
         </div>
         {
           filterAreaShowable && <div className="filters">
-            <select className="filter">
+            <select className="filter" onChange={categoryHandler}>
               <option>All Categories</option>
               <option value="dog">Dog</option>
               <option value="lion">Lion</option>
               <option value="monkey">Monkey</option>
               <option value="tiger">Tiger</option>
             </select>
-            <select className="filter">
+            <select className="filter" onChange={itemsHandler}>
               <option>All Items</option>
               <option value="single-item">Single Item</option>
               <option value="bundle">Bundle</option>
             </select>
-            <select className="filter">
+            <select className="filter" onChange={sortHandler}>
               <option>Sort by</option>
               <option value="high-rate">High Rate</option>
               <option value="mid-rate">Mid Rate</option>
@@ -67,7 +83,7 @@ const Market = (props) => {
         }
         <div className="products">
           {
-            NFT_DATA.map(data => {
+            filteredData.map(data => {
               return (
                 <div key={data.id} className="product-item">
                   <div className={data.image}/>
