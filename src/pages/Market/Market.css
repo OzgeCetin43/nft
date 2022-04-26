@@ -247,6 +247,82 @@
     font-size: 1.1rem;
 }
 
+.coming-soon-container {
+    padding: 20px;
+    text-align: center;
+}
+
+.coming-soon-container .coming-soon-title {
+    color: #d5f667;
+    margin: 10px 0;
+    font-size: 3rem;
+}
+
+.coming-soon-container .coming-soon-description {
+    color: #fff;
+    font-size: 1.1rem;
+    line-height: 2;
+}
+
+.coming-soon-container .swiper {
+    width: 100%;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+  
+.coming-soon-container .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+}
+
+.coming-soon-container .swiper-slide img {
+    display: block;
+    width: 50%;
+    margin: 10px 0;
+}
+
+.coming-soon-container .mySwiper2 {
+    height: 80%;
+    width: 100%;
+}
+
+.coming-soon-container .mySwiper {
+    height: 20%;
+    box-sizing: border-box;
+    padding: 10px 0;
+}
+
+.coming-soon-container .mySwiper img {
+    width: 60%;
+    padding: 20px;
+    border: 1px solid rgba(211, 207, 200, 0.4);
+    box-shadow: 1px 1px 10px 1px rgba(255, 255, 255, 0.4);
+}
+
+.coming-soon-container .mySwiper .swiper-slide {
+    width: 25%;
+    height: 100%;
+    opacity: 0.4;
+}
+
+.coming-soon-container .mySwiper .swiper-slide-thumb-active {
+    opacity: 1;
+}
+
+.coming-soon-container .swiper-button-prev, .coming-soon-container .swiper-button-next {
+    color: #d5f667;
+}
+
+
 @media(max-width: 912px) {
     .market-hero-container {
         flex-direction: column-reverse;
@@ -299,6 +375,22 @@
     .products .product-item .bid-btn {
         padding: 10px;
         font-size: 0.9rem;
+    }
+
+    .coming-soon-container .coming-soon-title {
+        font-size: 1.5rem;
+    }
+
+    .coming-soon-container .coming-soon-description {
+        font-size: 1rem;
+    }
+
+    .coming-soon-container .swiper-slide img {
+        width: 100%;
+    }
+
+    .coming-soon-container .mySwiper img {
+        width: 90%;
     }
 }
 

@@ -5,11 +5,29 @@ import eth from "../../assets/images/eth.png";
 import { Link } from "react-router-dom";
 import {NFT_DATA} from "../../assets/data/data";
 import BidModal from "../../components/Modals/BidModal";
+import image1 from "../../assets/images/coming-soon-1.jpg";
+import image2 from "../../assets/images/coming-soon-2.jpg";
+import image3 from "../../assets/images/coming-soon-3.jpg";
+import image4 from "../../assets/images/coming-soon-4.jpg";
+import image5 from "../../assets/images/coming-soon-5.jpg";
+import image6 from "../../assets/images/coming-soon-6.jpg";
+import image7 from "../../assets/images/coming-soon-7.jpg";
+import image8 from "../../assets/images/coming-soon-8.jpg";
+import image9 from "../../assets/images/coming-soon-9.jpg";
+import image10 from "../../assets/images/coming-soon-10.jpg";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css/bundle";
+import "swiper/css";
+import "swiper/css/free-mode";
+import "swiper/css/navigation";
+import "swiper/css/thumbs";
+import { FreeMode, Navigation, Thumbs } from "swiper";
 
 const Market = (props) => {
   const [filterAreaShowable, setFilterAreaShowable] = useState(false);
   const [bidModalIsShowable, setBidModalIsShowable] = useState(false);
   const [filteredData, setFilteredData] = useState(NFT_DATA);
+  const [thumbsSwiper, setThumbsSwiper] = useState(null);
 
   const sortHandler = (event) => {
     let filteredValues = NFT_DATA.filter(item => item.level === event.target.value);
@@ -109,6 +127,92 @@ const Market = (props) => {
               )
             })
           }
+        </div>
+        <div className="coming-soon-container">
+          <h1 className="coming-soon-title">Coming Soon</h1>
+          <p className="coming-soon-description">Our valuable and special NFTs created by our creators for you will be with you very soon. Please stand by.</p>
+          <Swiper
+            style={{
+              "--swiper-navigation-color": "#fff",
+              "--swiper-pagination-color": "#fff",
+            }}
+            spaceBetween={10}
+            navigation={true}
+            thumbs={{ swiper: thumbsSwiper }}
+            modules={[FreeMode, Navigation, Thumbs]}
+            className="mySwiper2"
+          >
+            <SwiperSlide>
+              <img src={image1} alt="nft, ethereum, marketplace"/>
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={image2} alt="nft, ethereum, marketplace"/>
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={image3} alt="nft, ethereum, marketplace"/>
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={image4} alt="nft, ethereum, marketplace"/>
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={image5} alt="nft, ethereum, marketplace"/>
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={image6} alt="nft, ethereum, marketplace"/>
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={image7} alt="nft, ethereum, marketplace"/>
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={image8} alt="nft, ethereum, marketplace"/>
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={image9} alt="nft, ethereum, marketplace"/>
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={image10} alt="nft, ethereum, marketplace"/>
+            </SwiperSlide>
+          </Swiper>
+          <Swiper
+            onSwiper={setThumbsSwiper}
+            spaceBetween={10}
+            slidesPerView={4}
+            freeMode={true}
+            watchSlidesProgress={true}
+            modules={[FreeMode, Navigation, Thumbs]}
+            className="mySwiper"
+          >
+            <SwiperSlide>
+              <img src={image1} alt="nft, ethereum, marketplace"/>
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={image2} alt="nft, ethereum, marketplace"/>
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={image3} alt="nft, ethereum, marketplace"/>
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={image4} alt="nft, ethereum, marketplace"/>
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={image5} alt="nft, ethereum, marketplace"/>
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={image6} alt="nft, ethereum, marketplace"/>
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={image7} alt="nft, ethereum, marketplace"/>
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={image8} alt="nft, ethereum, marketplace"/>
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={image9} alt="nft, ethereum, marketplace"/>
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={image10} alt="nft, ethereum, marketplace"/>
+            </SwiperSlide>
+          </Swiper>
         </div>
         {
           bidModalIsShowable && <BidModal setBidIsActive={setBidModalIsShowable}/>
