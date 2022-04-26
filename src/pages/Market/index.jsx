@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, {useState, useRef, useEffect} from "react";
 import "./Market.css";
 import hero from "../../assets/images/market-hero.png";
 import eth from "../../assets/images/eth.png";
@@ -28,6 +28,13 @@ const Market = (props) => {
   const [bidModalIsShowable, setBidModalIsShowable] = useState(false);
   const [filteredData, setFilteredData] = useState(NFT_DATA);
   const [thumbsSwiper, setThumbsSwiper] = useState(null);
+  const [days, setDays] = useState("00");
+  const [hours, setHours] = useState("00");
+  const [minutes, setMinutes] = useState("00");
+  const [seconds, setSeconds] = useState("00");
+
+  const [historyIsActive, setHistoryIsActive] = useState(false);
+  const [bidIsActive, setBidIsActive] = useState(false);
 
   const sortHandler = (event) => {
     let filteredValues = NFT_DATA.filter(item => item.level === event.target.value);
@@ -43,6 +50,40 @@ const Market = (props) => {
     let filteredValues = NFT_DATA.filter(item => item.bundleOrSingle ===  event.target.value);
     setFilteredData(filteredValues);
   }
+
+  let interval = useRef();
+
+    const startTimer = () => {
+        const endDate = new Date("Jul 31, 2022 00:00:00").getTime();
+
+        interval = setInterval(() => {
+            const today = new Date().getTime();
+            const difference = endDate - today;
+
+            const calculatedDays = Math.floor((difference / (1000 * 60 * 60 * 24)));
+            const calculatedHours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const calculatedMinutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
+            const calculatedSeconds = Math.floor((difference % (1000 * 60)) / 1000);
+
+            if(difference < 0) {
+                clearInterval(interval.current);
+            }
+
+            else {
+                setDays(calculatedDays);
+                setHours(calculatedHours);
+                setMinutes(calculatedMinutes);
+                setSeconds(calculatedSeconds);
+            }
+        }, 1000);
+    };
+
+    useEffect(() => {
+        startTimer();
+        return () => {
+            clearInterval(interval.current);
+        }
+    });
 
   return (
     <>
@@ -131,6 +172,27 @@ const Market = (props) => {
         <div className="coming-soon-container">
           <h1 className="coming-soon-title">Coming Soon</h1>
           <p className="coming-soon-description">Our valuable and special NFTs created by our creators for you will be with you very soon. Please stand by.</p>
+          <div className="timer">
+            <div className="time-container">
+              <h3 className="time">{days}</h3>
+              <p className="time-description">Days</p>
+            </div>
+            <span className="divider">:</span>
+            <div className="time-container">
+              <h3 className="time">{hours}</h3>
+              <p className="time-description">Hours</p>
+            </div>
+            <span className="divider">:</span>
+            <div className="time-container">
+              <h3 className="time">{minutes}</h3>
+              <p className="time-description">Minutes</p>
+            </div>
+            <span className="divider">:</span>
+            <div className="time-container">
+              <h3 className="time">{seconds}</h3>
+              <p className="time-description">Seconds</p>
+            </div>
+          </div>
           <Swiper
             style={{
               "--swiper-navigation-color": "#fff",
