@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/nft/static/css/main.1bd1ced1.css",
-    "main.js": "/nft/static/js/main.4a5f5af3.js",
+    "main.css": "/nft/static/css/main.15fd0285.css",
+    "main.js": "/nft/static/js/main.3ac4e29e.js",
     "static/media/creator2.jpg": "/nft/static/media/creator2.962b6cc852bff6db04e0.jpg",
     "static/media/creator1.jpg": "/nft/static/media/creator1.600d72e771f3dc8c525c.jpg",
     "static/media/remixicon.svg?t=1590207869815": "/nft/static/media/remixicon.9cedd2150922ead84869.svg",
@@ -35,6 +35,7 @@
     "static/media/coming-soon-5.jpg": "/nft/static/media/coming-soon-5.982a8af8d23cf1e15c7b.jpg",
     "static/media/remixicon.woff2?t=1590207869815": "/nft/static/media/remixicon.90668f6f9b3c2c18a090.woff2",
     "static/media/coming-soon-6.jpg": "/nft/static/media/coming-soon-6.c0c8ad0f752a588888ed.jpg",
+    "static/media/credit-card-bg.jpeg": "/nft/static/media/credit-card-bg.eef911c1ad9fe3805b2d.jpeg",
     "static/media/coffee.png": "/nft/static/media/coffee.bda2a954f5692f0b5d92.png",
     "static/media/coming-soon-3.jpg": "/nft/static/media/coming-soon-3.a56340a1b0afeaf0e000.jpg",
     "static/media/coming-soon-7.jpg": "/nft/static/media/coming-soon-7.4cfbd380130f2dc9e03c.jpg",
@@ -45,11 +46,11 @@
     "static/media/icon4.png": "/nft/static/media/icon4.3094f64e3e0c0f58a345.png",
     "static/media/seller3.png": "/nft/static/media/seller3.5b15672175d585f79182.png",
     "index.html": "/nft/index.html",
-    "main.1bd1ced1.css.map": "/nft/static/css/main.1bd1ced1.css.map",
-    "main.4a5f5af3.js.map": "/nft/static/js/main.4a5f5af3.js.map"
+    "main.15fd0285.css.map": "/nft/static/css/main.15fd0285.css.map",
+    "main.3ac4e29e.js.map": "/nft/static/js/main.3ac4e29e.js.map"
   },
   "entrypoints": [
-    "static/css/main.1bd1ced1.css",
-    "static/js/main.4a5f5af3.js"
+    "static/css/main.15fd0285.css",
+    "static/js/main.3ac4e29e.js"
   ]
 }
