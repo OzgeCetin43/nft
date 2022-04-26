@@ -1,0 +1,49 @@
+.create-nft-container {
+    margin: 55px 0;
+}
+
+.create-nft-container .create-nft-hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.create-nft-container .create-nft-hero .left {
+    width: 50%;
+    font-size: 3rem;
+}
+
+.create-nft-container .create-nft-hero .left .title, .description {
+    color: #fff;
+    width: 90%;
+    margin: 10px auto;
+}
+
+.create-nft-container .create-nft-hero .left .title .subtitle-hero {
+    color: #d5f667;
+}
+
+.create-nft-container .create-nft-hero .left .description {
+    font-size: 1.5rem;
+    line-height: 2;
+}
+
+@media(max-width: 912px) {
+    .create-nft-container {
+        margin: 15px 0;
+    }
+
+    .create-nft-container .create-nft-hero {
+        flex-direction: column-reverse;
+    }
+
+    .create-nft-container .create-nft-hero .left {
+        width: 90%;
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .create-nft-container .create-nft-hero .left .description {
+        font-size: 0.9rem;
+    }
+}

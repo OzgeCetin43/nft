@@ -5,11 +5,11 @@ import {WALLET_DATA} from "../../assets/data/wallet";
 import "./Wallet.css";
 
 const Wallet = () => {
-  const [number, setNumber] = useState('')
-  const [name, setName] = useState('')
-  const [expiry, setExpiry] = useState('')
-  const [cvc, setCvc] = useState('')
-  const [focus, setFocus] = useState('')
+  const [number, setNumber] = useState("");
+  const [name, setName] = useState("");
+  const [expiry, setExpiry] = useState("");
+  const [cvc, setCvc] = useState("");
+  const [focus, setFocus] = useState("");
 
   return (
     <div className='wallet-container'>
