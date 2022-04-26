@@ -26,7 +26,7 @@ const Header = () => {
             </ul>
         </nav>
         <div className="button-link">
-            <NavLink to="/wallet" className="btn-link"><i class="ri-wallet-line wallet-icon"></i>Connect Wallet</NavLink>
+            <NavLink to="/nft/wallet" className="btn-link"><i class="ri-wallet-line wallet-icon"></i>Connect Wallet</NavLink>
         </div>
     </header>
   )
