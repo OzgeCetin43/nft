@@ -89,7 +89,7 @@ const Market = (props) => {
     <>
       <div className="market-hero-container">
         <div className="left">
-          <small className="subtitle">Largest NFT marketplace on the world!</small>
+          <p className="subtitle">Largest NFT marketplace on the world!</p>
           <h1 className="title">NFT Marketplace</h1>
           <p className="description">Explore on the world's best & largest NFT marketplace with our beautiful NFT products. We want to be a part of your smile, success and future growth.</p>
           <p className="description">Do you want to create your own NFTs?</p>

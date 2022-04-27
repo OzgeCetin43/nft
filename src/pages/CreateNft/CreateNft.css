@@ -1,5 +1,5 @@
 .create-nft-container {
-    margin: 55px 0;
+    margin: 50px 0;
 }
 
 .create-nft-container .create-nft-hero {
@@ -9,14 +9,22 @@
 }
 
 .create-nft-container .create-nft-hero .left {
-    width: 50%;
-    font-size: 3rem;
+    width: 40%;
+    font-size: 2rem;
+    text-align: center;
 }
 
 .create-nft-container .create-nft-hero .right {
-    width: 50%;
-    border: 1px solid red;
-    height: auto;
+    background: url("../../assets/images/character7.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 700px;
+}
+
+.create-nft-container .create-nft-hero .left .subtitle {
+    color: #d3cfc8;
+    margin-top: 10px;
+    font-size: 1rem;
 }
 
 .create-nft-container .create-nft-hero .left .title, .description {
@@ -30,8 +38,20 @@
 }
 
 .create-nft-container .create-nft-hero .left .description {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     line-height: 2;
+}
+
+.create-nft-container .create-nft-hero .left .contact-btn {
+    display: block;
+    border-radius: 4px;
+    background-color: #d5f667;
+    padding: 20px;
+    color: #050505;
+    font-size: 1rem;
+    text-decoration: none;
+    width: 30%;
+    margin: auto;
 }
 
 @media(max-width: 912px) {
@@ -48,8 +68,17 @@
         font-size: 1rem;
         text-align: center;
     }
+    
+    .create-nft-container .create-nft-hero .right {
+        height: 300px;
+    }
 
     .create-nft-container .create-nft-hero .left .description {
         font-size: 0.9rem;
+    }
+
+    .create-nft-container .create-nft-hero .left .contact-btn {
+        padding: 10px;
+        font-size: 0.85rem;
     }
 }
