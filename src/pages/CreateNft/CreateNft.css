@@ -13,6 +13,10 @@
     font-size: 3rem;
 }
 
+.create-nft-container .create-nft-hero .right {
+    width: 50%;
+}
+
 .create-nft-container .create-nft-hero .left .title, .description {
     color: #fff;
     width: 90%;
@@ -30,7 +34,7 @@
 
 @media(max-width: 912px) {
     .create-nft-container {
-        margin: 15px 0;
+        margin: 0;
     }
 
     .create-nft-container .create-nft-hero {
