@@ -33,7 +33,7 @@ const Footer = () => {
           <h4 className="title">Community</h4>
           <ul className="community-links">
             <li className="community-link-item">
-              <i class="ri-arrow-right-s-fill right-arrow"></i><NavLink className="community-link" to="#">Community</NavLink>
+              <i class="ri-arrow-right-s-fill right-arrow"></i><NavLink className="community-link" to="/nft/team">Team</NavLink>
             </li>
             <li className="community-link-item">
               <i class="ri-arrow-right-s-fill right-arrow"></i><NavLink className="community-link" to="#">Documentation</NavLink>
@@ -42,7 +42,7 @@ const Footer = () => {
               <i class="ri-arrow-right-s-fill right-arrow"></i><NavLink className="community-link" to="#">Blog</NavLink>
             </li>
             <li className="community-link-item">
-              <i class="ri-arrow-right-s-fill right-arrow"></i><NavLink className="community-link" to="#">Forum</NavLink>
+              <i class="ri-arrow-right-s-fill right-arrow"></i><NavLink className="community-link" to="#">FAQ</NavLink>
             </li>
           </ul>
         </div>

@@ -1,6 +1,6 @@
 import React, {useState, useRef, useEffect} from "react";
 import "./Market.css";
-import hero from "../../assets/images/market-hero.png";
+import hero from "../../assets/images/giraffe.png";
 import eth from "../../assets/images/eth.png";
 import { Link } from "react-router-dom";
 import {NFT_DATA} from "../../assets/data/data";
@@ -53,37 +53,37 @@ const Market = (props) => {
 
   let interval = useRef();
 
-    const startTimer = () => {
-        const endDate = new Date("Jul 31, 2022 00:00:00").getTime();
+  const startTimer = () => {
+      const endDate = new Date("Jul 31, 2022 00:00:00").getTime();
 
-        interval = setInterval(() => {
-            const today = new Date().getTime();
-            const difference = endDate - today;
+      interval = setInterval(() => {
+          const today = new Date().getTime();
+          const difference = endDate - today;
 
-            const calculatedDays = Math.floor((difference / (1000 * 60 * 60 * 24)));
-            const calculatedHours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            const calculatedMinutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
-            const calculatedSeconds = Math.floor((difference % (1000 * 60)) / 1000);
+          const calculatedDays = Math.floor((difference / (1000 * 60 * 60 * 24)));
+          const calculatedHours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+          const calculatedMinutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
+          const calculatedSeconds = Math.floor((difference % (1000 * 60)) / 1000);
 
-            if(difference < 0) {
-                clearInterval(interval.current);
-            }
+          if(difference < 0) {
+              clearInterval(interval.current);
+          }
 
-            else {
-                setDays(calculatedDays);
-                setHours(calculatedHours);
-                setMinutes(calculatedMinutes);
-                setSeconds(calculatedSeconds);
-            }
-        }, 1000);
-    };
+          else {
+              setDays(calculatedDays);
+              setHours(calculatedHours);
+              setMinutes(calculatedMinutes);
+              setSeconds(calculatedSeconds);
+          }
+      }, 1000);
+  };
 
-    useEffect(() => {
-        startTimer();
-        return () => {
-            clearInterval(interval.current);
-        }
-    });
+  useEffect(() => {
+      startTimer();
+      return () => {
+          clearInterval(interval.current);
+      }
+  });
 
   return (
     <>
