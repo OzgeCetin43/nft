@@ -3,6 +3,8 @@ import hero from "../../assets/images/our-team-hero.png";
 import developer from "../../assets/images/developer.jpg";
 import "./Team.css";
 import { Link } from "react-router-dom";
+import { guarantee } from "../../assets/data/guarantee";
+import Investors from "../../components/Investors";
 
 const Team = () => {
   const [days, setDays] = useState("00");
@@ -108,10 +110,27 @@ const Team = () => {
                 <p className="about">ozgecetin43@gmail.com</p>
             </div>
         </div>
-
-        <div className="about-us-container">
-
+        <div className="do-container">
+            <p className="subtitle">What We Do</p>
+            <h1 className="title">We Make Best Nft</h1>
+            <p className="description">An NFT is a digital asset that represents real-world objects like art, music, in-game items and videos. They are bought and sold online, frequently with cryptocurrency, and they are generally encoded with the same underlying software as many cryptos. NFTs are also generally one of a kind, or at least one of a very limited run, and have unique identifying codes.</p>
+            <p className="description">We’re impartial and independent, and every day we create distinctive, world-class programmes and content which inform, educate and entertain millions of people in the around the world.</p>
+            <h3 className="guarantee-title">What we guarantee to you</h3>
+            <ul className="guarantee-items">
+                {
+                    guarantee.map(item => {
+                        return (
+                            <li className="guarantee-item" key={item.id}>
+                                <i className={item.iconClass + " icon"}></i>
+                                <h3 className="item-title">{item.title}</h3>
+                                <p className="item-description">{item.description}</p>
+                            </li>
+                        );
+                    })
+                }
+            </ul>
         </div>
+        <Investors/>
     </>
   )
 }

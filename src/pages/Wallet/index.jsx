@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Cards from "react-credit-cards";
 import "react-credit-cards/es/styles-compiled.css";
 import {WALLET_DATA} from "../../assets/data/wallet";
+import Investors from "../../components/Investors";
 import "./Wallet.css";
 
 const Wallet = () => {
@@ -72,6 +73,7 @@ const Wallet = () => {
           })
         }
       </div>
+      <Investors/>
     </div>
   )
 }

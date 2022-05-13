@@ -1,0 +1,32 @@
+.investors-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.investors-container .investors-title {
+    font-size: 4rem;
+    color: #d5f667;
+}
+
+.investors-container .investors {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 90%;
+}
+
+.investors-container .investors .investor {
+    width: 30%;
+    object-fit: cover;
+}
+
+ @media(max-width: 912px) {
+    .investors-container .investors-title {
+        font-size: 1.8rem;
+        text-align: center;
+    }
+ }
