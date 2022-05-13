@@ -42,12 +42,12 @@ const Footer = () => {
               <i class="ri-arrow-right-s-fill right-arrow"></i><NavLink className="community-link" to="#">Blog</NavLink>
             </li>
             <li className="community-link-item">
-              <i class="ri-arrow-right-s-fill right-arrow"></i><NavLink className="community-link" to="#">FAQ</NavLink>
+              <i class="ri-arrow-right-s-fill right-arrow"></i><NavLink className="community-link" to="/nft/faq">FAQ</NavLink>
             </li>
           </ul>
         </div>
         <div className="help-and-support">
-          <h4 className="title">Help And Suport</h4>
+          <h4 className="title">Help And Support</h4>
           <p><i class="ri-arrow-right-s-fill right-arrow"></i><span>Support : <span className="communication">info@nfts.com</span></span></p>
           <p><i class="ri-arrow-right-s-fill right-arrow"></i><span>Sales : <span className="communication">sales@nfts.com</span></span></p>
           <p><i class="ri-arrow-right-s-fill right-arrow"></i><span>Phone : <span className="communication">+90 000 00 00</span></span></p>
