@@ -186,20 +186,20 @@
 }
 
 .popular-works .title {
-    font-size: 3rem;
+    font-size: 4rem;
     color: #d5f667;
-    padding: 20px;
     line-height: 2;
     text-align: center;
 }
 
 .popular-works .description {
     color: #fff;
-    width: 30%;
+    width: 60%;
     margin: auto;
     text-align: center;
     margin-bottom: 20px;
-    line-height: 1.5;
+    line-height: 2;
+    font-size: 1.25rem;
 }
 
 .popular-works .trends {
