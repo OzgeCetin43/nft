@@ -1,5 +1,4 @@
 import React from "react";
-import hero from "../../assets/images/character7.svg";
 import { Typewriter } from 'react-simple-typewriter';
 import "./CreateNft.css";
 import { Link } from "react-router-dom";
@@ -14,7 +13,7 @@ const CreateNft = (props) => {
             Create and Sell Best 
             <p className="subtitle-hero">
               <Typewriter 
-                words={["NFTs", "Digital Arts", "Characters"]}
+                words={["NFTs", "Digital Arts", "Animals"]}
                 loop
                 cursor
                 cursorStyle='_'
@@ -24,7 +23,7 @@ const CreateNft = (props) => {
               />
             </p>
           </h1>
-          <p className="description">NFTs, the world's largest and best marketplace, is waiting for your support to launch new ventures. As it is known, NFT's are created about animals. However, you will also be able to produce character-themed NFT's upon intense requests from you.</p>
+          <p className="description">NFTs, the world's largest and best market, are waiting for your support to produce new NFTs. As is known, NFTs are created about animals. You can create and sell your own NFTs right away.</p>
           <Link to="/nft/contact" className="contact-btn">Contact Us</Link>
         </div>
         <div className="right"/>

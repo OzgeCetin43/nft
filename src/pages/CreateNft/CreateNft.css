@@ -15,10 +15,10 @@
 }
 
 .create-nft-container .create-nft-hero .right {
-    background: url("../../assets/images/character7.svg");
+    background: url("../../assets/images/create-nft-hero.png");
     background-position: center;
     background-repeat: no-repeat;
-    height: 700px;
+    height: 500px;
 }
 
 .create-nft-container .create-nft-hero .left .subtitle {
@@ -70,11 +70,11 @@
     }
     
     .create-nft-container .create-nft-hero .right {
-        height: 300px;
+        margin-top: 20px;
     }
 
     .create-nft-container .create-nft-hero .left .description {
-        font-size: 0.9rem;
+        font-size: 1rem;
     }
 
     .create-nft-container .create-nft-hero .left .contact-btn {
