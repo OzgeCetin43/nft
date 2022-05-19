@@ -21,7 +21,7 @@
     height: 500px;
 }
 
-.create-nft-container .create-nft-hero .left .subtitle {
+.create-nft-container .create-nft-hero .left .subtitle, .create-nft-container .create-nft-steps .nft-create-steps-subtitle {
     color: #d3cfc8;
     margin-top: 10px;
     font-size: 1rem;
@@ -54,6 +54,71 @@
     margin: auto;
 }
 
+.create-nft-container .create-nft-steps {
+    text-align: center;
+    margin: 100px auto 10px;
+}
+
+.create-nft-container .create-nft-steps .nft-create-steps-title {
+    color: #d5f667;
+    font-size: 4rem;
+}
+
+.create-nft-container .create-nft-steps .create-nft-steps-inner {
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 0;
+}
+
+.create-nft-container .create-nft-steps .create-nft-steps-inner .create-nft-step {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid rgba(211, 207, 200, 0.4);
+    box-shadow: 1px 1px 10px 1px rgba(255, 255, 255, 0.4);
+}
+
+.create-nft-container .create-nft-steps .create-nft-steps-inner .create-nft-step .order-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.create-nft-container .create-nft-steps .create-nft-steps-inner .create-nft-step .order-container .order {
+    color: rgba(211, 207, 200, 0.4);
+    font-size: 4rem;
+}
+
+.create-nft-container .create-nft-steps .create-nft-steps-inner .create-nft-step .order-container .icon {
+    color: #d5f667;
+    font-size: 4rem;
+    margin: 10px 0;
+}
+
+.create-nft-container .create-nft-steps .create-nft-steps-inner .create-nft-step .step-title {
+    color: #fff;
+    font-size: 2rem;
+}
+
+.create-nft-container .create-nft-steps .create-nft-steps-inner .create-nft-step .step-description {
+    color: #d3cfc8;
+    text-align: left;
+    line-height: 2;
+    font-size: 1.25rem;
+}
+
+.create-nft-container .arrow-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 100px 0;
+}
+
 @media(max-width: 912px) {
     .create-nft-container {
         margin: 0;
@@ -80,5 +145,43 @@
     .create-nft-container .create-nft-hero .left .contact-btn {
         padding: 10px;
         font-size: 0.85rem;
+    }
+    
+    .create-nft-container .create-nft-steps {
+        margin: 50px 0
+    }
+
+    .create-nft-container .create-nft-steps .nft-create-steps-title {
+        font-size: 2rem;
+    }
+
+    .create-nft-container .create-nft-steps .create-nft-steps-inner {
+        flex-direction: column;
+        margin: 20px 0;
+    }
+
+    .create-nft-container .create-nft-steps .create-nft-steps-inner .create-nft-step {
+        width: 90%;
+        margin: 10px auto;
+    }
+
+    .create-nft-container .create-nft-steps .create-nft-steps-inner .create-nft-step .order-container .order {
+        font-size: 2rem;
+    }
+
+    .create-nft-container .create-nft-steps .create-nft-steps-inner .create-nft-step .order-container .icon {
+        font-size: 2rem;
+    }
+
+    .create-nft-container .create-nft-steps .create-nft-steps-inner .create-nft-step .step-title {
+        font-size: 1rem;
+    }
+    
+    .create-nft-container .create-nft-steps .create-nft-steps-inner .create-nft-step .step-description {
+        font-size: 1.1rem;
+    }
+
+    .create-nft-container .arrow-container {
+        margin: 50px 0;
     }
 }

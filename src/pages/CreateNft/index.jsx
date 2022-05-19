@@ -1,7 +1,9 @@
 import React from "react";
 import { Typewriter } from 'react-simple-typewriter';
-import "./CreateNft.css";
 import { Link } from "react-router-dom";
+import { createSteps } from "../../assets/data/createSteps";
+import "./CreateNft.css";
+import DownArrow from "../../components/DownArrow";
 
 const CreateNft = (props) => {
   return (
@@ -27,6 +29,29 @@ const CreateNft = (props) => {
           <Link to="/nft/contact" className="contact-btn">Contact Us</Link>
         </div>
         <div className="right"/>
+      </div>
+      <div className="create-nft-steps">
+        <p className="nft-create-steps-subtitle">Create NFT</p>
+        <h1 className="nft-create-steps-title">What are the NFT creation steps?</h1>
+        <div className="create-nft-steps-inner">
+          {
+            createSteps.map(item => {
+              return (
+                <div className="create-nft-step" key={item.id}>
+                  <div className="order-container">
+                    <i className={item.iconClass + " icon"}></i>
+                    <p className="order">{item.id}</p>
+                  </div>
+                  <h1 className="step-title">{item.title}</h1>
+                  <p className="step-description">{item.description}</p>
+                </div>
+              )
+            })
+          }
+        </div>
+      </div>
+      <div className="arrow-container">
+        <DownArrow/>
       </div>
     </div>
   )

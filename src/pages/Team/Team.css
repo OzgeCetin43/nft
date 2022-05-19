@@ -183,11 +183,11 @@
 .do-container .guarantee-items .guarantee-item .item-title {
     font-size: 1.55rem;
     margin: 10px 0;
-    color: #d3cfc8;
+    color: #fff;
 }
 
 .do-container .guarantee-items .guarantee-item .item-description {
-    color: #fff;
+    color: #d3cfc8;
     font-size: 1rem;
     line-height: 2;
 }
@@ -304,9 +304,5 @@
 
     .do-container .guarantee-items .guarantee-item .item-title {
         font-size: 1rem;
-    }
-
-    .do-container .guarantee-items .guarantee-item .item-description {
-        font-size: 0.9rem;
     }
 }
