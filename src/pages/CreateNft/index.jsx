@@ -2,8 +2,9 @@ import React from "react";
 import { Typewriter } from 'react-simple-typewriter';
 import { Link } from "react-router-dom";
 import { createSteps } from "../../assets/data/createSteps";
+import single from "../../assets/images/single.png";
+import multiple from "../../assets/images/multiple.png";
 import "./CreateNft.css";
-import DownArrow from "../../components/DownArrow";
 
 const CreateNft = (props) => {
   return (
@@ -50,8 +51,22 @@ const CreateNft = (props) => {
           }
         </div>
       </div>
-      <div className="arrow-container">
-        <DownArrow/>
+      <div className="create-nft-area">
+        <p>Choose "Single" if you want your collectible to be one of a kind or "Multiple" if you want to sell one collectible times</p>
+        <div className="create-nft-choices">
+          <div className="create-nft-choice">
+            <Link to="/nft/single">
+              <img src={single} alt="NFT, Ethereum, marketplace"/>
+              <p>Single</p>
+            </Link>
+          </div>
+          <div className="create-nft-choice">
+            <Link to="/nft/multiple">
+              <img src={multiple} alt="NFT, Ethereum, marketplace"/>
+              <p>Multiple</p>
+            </Link>
+          </div>
+        </div>
       </div>
     </div>
   )

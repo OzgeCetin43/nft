@@ -48,12 +48,61 @@
     font-size: 1rem;
 }
 
+.wallet-container .create-sell-container {
+    padding: 20px;
+    margin: 50px 0 30px;
+}
+
+.wallet-container .create-sell-container .create-sell-subtitle {
+    color: #d3cfc8;
+    text-align: center;
+}
+
+.wallet-container .create-sell-container .create-sell-title {
+    font-size: 4rem;
+    color: #d5f667;
+    text-align: center;
+}
+
+.wallet-container .create-sell-container .create-sell-inner-container {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wallet-container .create-sell-container .create-sell-inner-container .create-sell-item {
+    width: 30%;
+    height: 380px;
+    border: 1px solid rgba(211, 207, 200, 0.4);
+    box-shadow: 1px 1px 10px 1px rgba(255, 255, 255, 0.4);
+    margin: 30px;
+    padding: 20px;
+}
+
+.wallet-container .create-sell-container .create-sell-inner-container .create-sell-item .icon {
+    width: 50px;
+    height: 50px;
+}
+
+.wallet-container .create-sell-container .create-sell-inner-container .create-sell-item .create-sell-item-title {
+    font-size: 2rem;
+    color: #d5f667;
+}
+
+.wallet-container .create-sell-container .create-sell-inner-container .create-sell-item .create-sell-item-description {
+    color: #d3cfc8;
+    font-size: 1.25rem;
+    line-height: 2;
+}
+
 .wallet-container .wallet-items {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    margin: 50px auto;
+    margin: 10px auto;
 }
 
 .wallet-container .wallet-items .wallet-item {
@@ -75,6 +124,7 @@
 
 .wallet-container .wallet-items .wallet-item .description {
     line-height: 2;
+    margin: 0;
 }
 
 @media(max-width: 912px) {
@@ -89,6 +139,32 @@
 
     .wallet-container .wallet-items .wallet-item {
         width: 47%;
+    }
+
+    .wallet-container .create-sell-container {
+        margin: 20px 0 10px;
+    }
+
+    .wallet-container .create-sell-container .create-sell-title {
+        font-size: 2rem;
+    }
+
+    .wallet-container .create-sell-container .create-sell-inner-container {
+        flex-direction: column;
+    }
+
+    .wallet-container .create-sell-container .create-sell-inner-container .create-sell-item {
+        width: 100%;
+        height: auto;
+        margin: 20px;
+    }
+
+    .wallet-container .create-sell-container .create-sell-inner-container .create-sell-item .create-sell-item-title {
+        font-size: 1rem;
+    }
+    
+    .wallet-container .create-sell-container .create-sell-inner-container .create-sell-item .create-sell-item-description {
+        font-size: 0.95rem;
     }
 }
 

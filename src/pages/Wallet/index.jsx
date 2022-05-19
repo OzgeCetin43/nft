@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Cards from "react-credit-cards";
 import "react-credit-cards/es/styles-compiled.css";
+import { CONNECT_WALLET } from "../../assets/data/connectWallet";
 import {WALLET_DATA} from "../../assets/data/wallet";
 import Investors from "../../components/Investors";
 import "./Wallet.css";
@@ -59,6 +60,23 @@ const Wallet = () => {
           />
           <button>Connect Wallet</button>
         </form>
+      </div>
+      <div className="create-sell-container">
+       <p className="create-sell-subtitle">Create and Sell</p>
+       <h1 className="create-sell-title">Create and Sell Your Own NFTs</h1>
+       <div className="create-sell-inner-container">
+         {
+           CONNECT_WALLET.map(item => {
+             return (
+               <div className="create-sell-item">
+                 <img src={item.icon} alt="NFT, marketplace, Ethereum" className="icon" />
+                 <h1 className="create-sell-item-title">{item.title}</h1>
+                 <p className="create-sell-item-description">{item.description}</p>
+               </div>
+             )
+           })
+         }
+       </div>
       </div>
       <div className='wallet-items'>
         {

@@ -24,7 +24,11 @@ const FAQ = () => {
                     <div className="faq-item">
                         <div className="faq-item-inner" onClick={() => changeAnswerShowable(item.id)}>
                             <h1 className="faq-question">{item.question}</h1>
-                            <i class="ri-arrow-drop-down-line icon"></i>
+                            {
+                                answerShowable === item.id
+                                ? <i class="ri-arrow-drop-up-line icon"></i>
+                                : <i class="ri-arrow-drop-down-line icon"></i>
+                            }
                         </div>
                         <p className={answerShowable === item.id ? "faq-answer active" : "faq-answer"}>{item.answer}</p>
                     </div>
