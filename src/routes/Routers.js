@@ -10,6 +10,7 @@ import Profile from "../pages/Profile";
 import Wallet from "../pages/Wallet";
 import Team from "../pages/Team";
 import FAQ from "../pages/Faq";
+import CreateSingleCollectible from "../pages/CreateSingleCollectible";
 
 const Routers = () => {
   return (
@@ -17,6 +18,7 @@ const Routers = () => {
         <Route path="/nft/" element={<Navigate to="/nft/home"/>}/>
         <Route path="/nft/home" element={<Home/>}/>
         <Route path="/nft/createNft" element={<CreateNft/>}/>
+        <Route path="/nft/single" element={<CreateSingleCollectible/>}/>
         <Route path="/nft/market" element={<Market/>}/>
         <Route path="/nft/market/:id" element={<DetailNft/>}/>
         <Route path="/nft/profile" element={<Profile/>}/>

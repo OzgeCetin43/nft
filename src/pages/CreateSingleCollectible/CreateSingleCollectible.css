@@ -1,0 +1,293 @@
+.single-container {
+    text-align: center;
+    padding: 20px;
+    color: #fff;
+}
+
+.single-container .single-subtitle {
+    color: #d3cfc8;
+}
+
+.single-container .single-title {
+    font-size: 4rem;
+    color: #d5f667;
+}
+
+.single-container .single-inner-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.single-container .single-inner-container .single-left, .single-left, .single-container .single-inner-container .single-right {
+    width: 45%;
+    text-align: left;
+    margin: 50px 0;
+    padding: 20px;
+}
+
+.single-container .single-inner-container .single-right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.single-container .single-inner-container .single-left .file-upload {
+    text-align: center;
+    border: 1px dashed #d3cfc8;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.single-container .single-inner-container .single-left .file-upload .single-description {
+    font-size: 1.25rem;
+    line-height: 2;
+}
+
+.single-container .single-inner-container .single-left .file-upload .file-label {
+    background-color: #d5f667;
+    border-radius: 4px;
+    padding: 10px;
+    width: 25%;
+    margin: 10px auto;
+    outline: none;
+    border: none;
+    color: #050505;
+    display: block;
+}
+
+.single-container .single-inner-container .single-left .file-upload .file-input {
+    display: none;
+}
+
+.single-container .single-inner-container .single-left .bids-methods {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.single-container .single-inner-container .single-left .bids-methods .bid-method {
+    width: 25%;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(211, 207, 200, 0.4);
+    box-shadow: 1px 1px 10px 1px rgba(255, 255, 255, 0.4);
+    border-radius: 4px;
+    margin: 20px;
+    margin-left: 0;
+}
+
+.single-container .single-inner-container .single-left .bids-methods .bid-method:hover {
+    background-color: #d5f667;
+    color: #050505
+}
+
+.single-container .single-inner-container .single-left .bids-methods .bid-method.active {
+    background-color: #d5f667;
+    color: #050505;
+}
+
+.single-container .single-inner-container .single-left .bids-methods .bid-method.active .icon {
+    color: #050505;
+}
+
+.single-container .single-inner-container .single-left .bids-methods .bid-method .icon {
+    color: #d5f667;
+    font-size: 2rem;
+    margin: 20px;
+}
+
+.single-container .single-inner-container .single-left .bids-methods .bid-method:hover .icon {
+    color: #050505;
+}
+
+.single-container .single-inner-container .single-left .create-item-button {
+    padding: 20px;
+    background-color: #d5f667;
+    color: #050505;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    width: 25%;
+    margin: 10px 0;
+}
+
+.single-container .single-inner-container .single-right .item-card {
+    border: 1px solid rgba(211, 207, 200, 0.4);
+    box-shadow: 1px 1px 10px 1px rgba(255, 255, 255, 0.4);
+    width: 75%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0;
+    background-color: #212121;
+}
+
+.single-container .single-inner-container .single-right .item-card .item-card-inner {
+    padding: 20px;
+}
+
+.single-container .single-inner-container .single-right .item-card .item-card-inner .item-card-image {
+    width: 100%;
+    object-fit: cover;
+}
+
+.single-container .single-inner-container .single-right .item-card .item-card-inner .item-card-title {
+    color: #d5f667;
+    text-align: center;
+    font-size: 2rem;
+    margin: 0 0 10px;
+}
+
+.single-container .single-inner-container .single-right .item-card .item-card-inner .item-card-creator-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+} 
+
+.single-container .single-inner-container .single-right .item-card .item-card-inner .item-card-creator-container .item-card-creator {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.single-container .single-inner-container .single-right .item-card .item-card-inner .item-card-creator-container .created-container {
+    margin-left: 20px;
+}
+
+.single-container .single-inner-container .single-right .item-card .item-card-inner .item-card-creator-container .created-container .item-card-created {
+    color: #d3cfc8;
+    font-size: 0.85rem;
+}
+
+.single-container .single-inner-container .single-right .item-card .item-card-inner .item-card-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.single-container .single-inner-container .single-right .item-card .item-card-inner .item-card-info .item-card-bid {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.single-container .single-inner-container .single-right .item-card .item-card-inner .item-card-info .item-card-bid .item-card-bid-title {
+    color: #d5f667;
+    font-size: 1.25rem;
+}
+
+.single-container .single-inner-container .single-right .item-card .item-card-inner .item-card-info .item-card-bid .item-card-bid-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.single-container .single-inner-container .single-right .item-card .item-card-inner .item-card-info .item-card-bid .item-card-bid-info h3 {
+    margin-right: 20px;
+}
+
+.single-container .single-inner-container .single-right .item-card .item-card-inner .item-card-info .item-card-like-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.single-container .single-inner-container .single-right .item-card .item-card-inner .item-card-info .item-card-like-container i {
+    margin-right: 10px;
+    font-size: 1.25rem;
+}
+
+.single-container .single-inner-container .single-right .item-card .item-card-inner .item-card-info .item-card-like-container span {
+    font-size: 1.25rem;
+}
+
+.single-container .single-inner-container .single-right .item-card .item-card-inner .bid-button {
+    background-color: #d5f667;
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    padding: 20px;
+    margin: 10px 0;
+}
+
+.single-container .single-inner-container .single-right .description-container {
+    width: 50%;
+}
+
+.single-container .single-inner-container .single-right .description-container .arrow {
+    width: 100px;
+    position: relative;
+    left: -100px;
+}
+
+.single-container .single-inner-container .single-right .description-container .description-title {
+    color: #d5f667;
+    font-size: 1.25rem;
+    line-height: 2;
+}
+
+.single-container .single-inner-container .single-right .description-container .description-paragraph {
+    line-height: 2;
+    color: #d3cfc8;
+}
+
+@media(max-width: 912px) {
+    .single-container .single-title {
+        font-size: 2rem;
+    }
+
+    .single-container .single-inner-container {
+        flex-direction: column;
+    }
+
+    .single-container .single-inner-container .single-left, .single-left, .single-container .single-inner-container .single-right {
+        width: 100%;
+        margin: 0;
+    }
+
+    .single-container .single-inner-container .single-left .file-upload .single-description {
+        font-size: 1rem;
+    }
+
+    .single-container .single-inner-container .single-left .file-upload .file-label {
+        width: 50%;
+    }
+
+    .single-container .single-inner-container .single-left .bids-methods {
+        flex-direction: column;
+    }
+
+    .single-container .single-inner-container .single-left .bids-methods .bid-method {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .single-container .single-inner-container .single-left .create-item-button {
+        width: 100%;
+    }
+
+    .single-container .single-inner-container .single-right {
+        flex-direction: column;
+    }    
+    
+    .single-container .single-inner-container .single-right .item-card {
+        width: 100%;
+    }
+
+    .single-container .single-inner-container .single-right .description-container .arrow {
+        width: 50px;
+        left: 0;
+        margin: 10px 0;
+    }
+
+    .single-container .single-inner-container .single-right .description-container {
+        width: 100%;
+    }
+}

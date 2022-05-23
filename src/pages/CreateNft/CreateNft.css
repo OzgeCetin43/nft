@@ -80,6 +80,7 @@
     padding: 20px;
     border: 1px solid rgba(211, 207, 200, 0.4);
     box-shadow: 1px 1px 10px 1px rgba(255, 255, 255, 0.4);
+    border-radius: 4px;
 }
 
 .create-nft-container .create-nft-steps .create-nft-steps-inner .create-nft-step .order-container {
@@ -132,6 +133,7 @@
     margin: 10px;
     border: 1px solid rgba(211, 207, 200, 0.4);
     box-shadow: 1px 1px 10px 1px rgba(255, 255, 255, 0.4);
+    border-radius: 4px;
 }
 
 .create-nft-container .create-nft-area .create-nft-choices .create-nft-choice:hover {
