@@ -203,6 +203,10 @@
     font-size: 1.25rem;
 }
 
+.single-container .single-inner-container .single-right .item-card .item-card-inner .item-card-info .item-card-like-container i:hover {
+    color: #d5f667;
+}
+
 .single-container .single-inner-container .single-right .item-card .item-card-inner .item-card-info .item-card-like-container span {
     font-size: 1.25rem;
 }
@@ -236,6 +240,90 @@
 .single-container .single-inner-container .single-right .description-container .description-paragraph {
     line-height: 2;
     color: #d3cfc8;
+}
+
+.single-container .single-inner-container .single-left p {
+    line-height: 2;
+    color: #d3cfc8;
+}
+
+.single-container .single-inner-container .single-left .purchased-container {
+    border: 1px dashed rgba(211, 207, 200, 0.4);
+    padding: 20px;
+    border-radius: 4px;
+    margin: 10px 0;
+}
+
+.single-container .single-inner-container .single-left .purchased-container .purchased-inner-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.single-container .single-inner-container .single-left .purchased-container .purchased-inner-container i {
+    color: #d5f667;
+}
+
+.single-container .single-inner-container .single-left .purchased-container .purchased-inner-container .switch {
+    width: 60px;
+    height: 24px;
+    position: relative;
+}
+
+.single-container .single-inner-container .single-left .purchased-container .purchased-inner-container .switch input {
+    visibility: hidden;
+}
+
+.single-container .single-inner-container .single-left .purchased-container .purchased-inner-container .switch .slider {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 20px;
+}
+
+.single-container .single-inner-container .single-left .purchased-container .purchased-inner-container .switch input:checked + .slider {
+    background-color: #d5f667;
+}
+
+.single-container .single-inner-container .single-left .purchased-container .purchased-inner-container .switch .slider::before {
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #fff;
+    top: 2px;
+    left: 4px;
+    transition: all 0.5s;
+}
+
+.single-container .single-inner-container .single-left .purchased-container .purchased-inner-container .switch input:checked + .slider::before {
+   transform: translateX(34px);
+   background-color: #050505;
+}
+
+.single-container .single-inner-container .single-left .selection {
+    color: #fff;
+}
+
+.single-container .single-inner-container .single-left .selection .option {
+    color: #050505;
+}
+
+.single-container .single-inner-container .single-left .purchased-container .purchased-input, .single-container .single-inner-container .single-left .selection, .single-container .single-inner-container .single-left .title-input, .single-container .single-inner-container .single-left .description-input {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 4px;
+    outline: none;
+    margin: 10px 0;
+    border: 1px solid rgba(211, 207, 200, 0.4);
+    background-color: transparent;
+    font-size: 1rem;
+    color: #fff;
 }
 
 @media(max-width: 912px) {
@@ -289,5 +377,27 @@
 
     .single-container .single-inner-container .single-right .description-container {
         width: 100%;
+    }
+
+    .single-container .single-inner-container .single-left .purchased-container {
+        padding: 10px;
+    }
+}
+
+@media(max-width: 393px) {
+    .single-container .single-inner-container .single-left .purchased-container .purchased-inner-container .switch input:checked + .slider::before {
+        transform: translateX(30px);
+    }
+}
+
+@media(max-width: 384px) {
+    .single-container .single-inner-container .single-left.purchased-container .purchased-inner-container .switch input:checked + .slider::before {
+        transform: translateX(28px);
+    }
+}
+
+@media(max-width: 360px) {
+    .single-container .single-inner-container .single-left .purchased-container .purchased-inner-container .switch input:checked + .slider::before {
+        transform: translateX(24px);
     }
 }

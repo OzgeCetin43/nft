@@ -4,19 +4,18 @@ import FixedPrice from "../../components/FixedPrice";
 import tiger from "../../assets/images/tiger2.png";
 import creator from "../../assets/images/creator2.jpg";
 import arrow from "../../assets/images/arrow.png";
-import "./CreateSingleCollectible.css";
-import TimedAuction from "../../components/TimedAuction";
+import "./CreateMultipleCollectible.css";
 
-const CreateSingleCollectible = () => {
+const CreateMultipleCollectible = () => {
   const [methodName, setMethodName] = useState("Fixed price");
   const [isToggled, setIsToggled] = useState(false);
 
   return (
-    <div className="single-container">
-        <p className="single-subtitle">Create Single NFT</p>
-        <h1 className="single-title">Create Single Collectible</h1>
-        <div className="single-inner-container">
-            <div className="single-left">
+    <div className="multiple-container">
+        <p className="multiple-subtitle">Create Multiple NFT</p>
+        <h1 className="multiple-title">Create Multiple Collectible</h1>
+        <div className="multiple-inner-container">
+            <div className="multiple-left">
                 <h3>Upload File</h3>
                 <div className="file-upload">
                     <p className="single-description">PNG, JPG or WEBP. Max 200 mb.</p>
@@ -30,7 +29,7 @@ const CreateSingleCollectible = () => {
                    {
                        SELECT_METHODS.map(item => {
                         return (
-                            <div className={methodName === item.name ? "bid-method active" : "bid-method"} key={item.id} onClick={() => setMethodName(item.name)}>
+                            item.id !== 2 && <div className={methodName === item.name ? "bid-method active" : "bid-method"} key={item.id} onClick={() => setMethodName(item.name)}>
                                 <i className={item.icon + " icon"}></i>
                                 <span className="bid-method-name">{item.name}</span>
                             </div>
@@ -40,9 +39,6 @@ const CreateSingleCollectible = () => {
                 </div>
                 {
                     methodName === "Fixed price" && <FixedPrice/>
-                }
-                {
-                    methodName === "Timed auction" && <TimedAuction/>
                 }
                 <div className="purchased-container">
                     <div className="purchased-inner-container">
@@ -70,9 +66,11 @@ const CreateSingleCollectible = () => {
                 <input type="text" placeholder="Enter title for your NFT" className="title-input"/>
                 <h3>Description</h3>
                 <input type="text" placeholder="Enter description for your NFT" className="description-input"/>
+                <h3>Number of copies</h3>
+                <input type="text" placeholder="E.g. 12" className="copies-input"/>
                 <button className="create-item-button">Create Item</button>
             </div>
-            <div className="single-right">
+            <div className="multiple-right">
                 <div>
                     <h3>Preview Item</h3>
                     <div className="item-card">
@@ -94,10 +92,10 @@ const CreateSingleCollectible = () => {
                                         <p>$24.203,6</p>
                                     </div>
                                 </div>
-                            <div className="item-card-like-container">
-                                    <i class="ri-heart-3-line"></i>
-                                    <span>50</span>
-                            </div>
+                                <div className="item-card-like-container">
+                                        <i class="ri-heart-3-line"></i>
+                                        <span>50</span>
+                                </div>
                             </div>
                             <button className="bid-button">Place a bid</button>
                         </div>
@@ -114,4 +112,4 @@ const CreateSingleCollectible = () => {
   )
 }
 
-export default CreateSingleCollectible;
+export default CreateMultipleCollectible;
