@@ -42,7 +42,7 @@ const Footer = () => {
               <i class="ri-arrow-right-s-fill right-arrow"></i><NavLink className="community-link" to="/nft/privacyPolicy">Privacy Policy</NavLink>
             </li>
             <li className="community-link-item">
-              <i class="ri-arrow-right-s-fill right-arrow"></i><NavLink className="community-link" to="#">Blog</NavLink>
+              <i class="ri-arrow-right-s-fill right-arrow"></i><NavLink className="community-link" to="/nft/blog">Blog</NavLink>
             </li>
             <li className="community-link-item">
               <i class="ri-arrow-right-s-fill right-arrow"></i><NavLink className="community-link" to="/nft/faq">FAQ</NavLink>

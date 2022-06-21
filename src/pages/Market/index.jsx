@@ -33,9 +33,6 @@ const Market = (props) => {
   const [minutes, setMinutes] = useState("00");
   const [seconds, setSeconds] = useState("00");
 
-  const [historyIsActive, setHistoryIsActive] = useState(false);
-  const [bidIsActive, setBidIsActive] = useState(false);
-
   const sortHandler = (event) => {
     let filteredValues = NFT_DATA.filter(item => item.level === event.target.value);
     setFilteredData(filteredValues);
@@ -54,7 +51,7 @@ const Market = (props) => {
   let interval = useRef();
 
   const startTimer = () => {
-      const endDate = new Date("Jul 31, 2022 00:00:00").getTime();
+      const endDate = new Date("Jul 31, 2023 00:00:00").getTime();
 
       interval = setInterval(() => {
           const today = new Date().getTime();

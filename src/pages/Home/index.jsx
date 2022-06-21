@@ -23,7 +23,7 @@ const Home = (props) => {
   let interval = useRef();
 
   const startTimer = () => {
-      const endDate = new Date("May 31, 2022 00:00:00").getTime();
+      const endDate = new Date("May 31, 2023 00:00:00").getTime();
 
       interval = setInterval(() => {
           const today = new Date().getTime();
