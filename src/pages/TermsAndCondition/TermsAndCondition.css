@@ -1,0 +1,61 @@
+.terms-container {
+    padding: 50px;
+    text-align: center;
+}
+
+.terms-container .terms-subtitle {
+    color: #d3cfc8;
+}
+
+.terms-container .terms-title {
+    font-size: 4rem;
+    color: #d5f667;
+}
+
+.terms-container .terms-date {
+    color: #d3cfc8;
+    font-size: 18px;
+}
+
+.terms-container .terms-description {
+    color: #fff;
+    line-height: 2;
+    width: 50%;
+    font-size: 20px;
+    margin: auto;
+    text-align: justify;
+    margin-bottom: 10px;
+}
+
+.terms-container .terms-description:nth-of-type(2) {
+    margin-top: 35px;
+}
+
+.terms-container .terms-description .privacy-link {
+    color: #d5f667;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.terms-container .terms-description b {
+    color: #d5f667;
+}
+
+@media(max-width: 912px) {
+    .terms-container {
+        padding: 20px;
+    }
+
+    .terms-container .terms-title {
+        font-size: 2rem;
+    }
+
+    .terms-container .terms-date {
+        font-size: 14px;
+    }
+
+    .terms-container .terms-description {
+        width: 95%;
+        font-size: 1rem;
+    }
+}
