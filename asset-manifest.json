@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/nft/static/css/main.c83c05c1.css",
-    "main.js": "/nft/static/js/main.a72fdb11.js",
+    "main.css": "/nft/static/css/main.20b69c7d.css",
+    "main.js": "/nft/static/js/main.02b0fbb0.js",
     "static/media/creator2.jpg": "/nft/static/media/creator2.962b6cc852bff6db04e0.jpg",
     "static/media/creator1.jpg": "/nft/static/media/creator1.600d72e771f3dc8c525c.jpg",
     "static/media/remixicon.svg?t=1590207869815": "/nft/static/media/remixicon.9cedd2150922ead84869.svg",
@@ -28,10 +28,13 @@
     "static/media/create-nft-hero.png": "/nft/static/media/create-nft-hero.4180cb6edf4f37da7d22.png",
     "static/media/dog.png": "/nft/static/media/dog.67f6addc8a84c7ee8293.png",
     "static/media/coming-soon-9.jpg": "/nft/static/media/coming-soon-9.00ab5ecd791acb883c0b.jpg",
+    "static/media/blog2.png": "/nft/static/media/blog2.3168b60111996a2ff146.png",
     "static/media/giraffe.png": "/nft/static/media/giraffe.33051c63bd3f2696f8ca.png",
     "static/media/remixicon.woff?t=1590207869815": "/nft/static/media/remixicon.8d09fa11700ed63cf96e.woff",
+    "static/media/blog1.png": "/nft/static/media/blog1.4345d59ba3d651e2d51a.png",
     "static/media/coming-soon-2.jpg": "/nft/static/media/coming-soon-2.ee7f108d92293dd5ee1c.jpg",
     "static/media/coming-soon-4.jpg": "/nft/static/media/coming-soon-4.1b8b9c9c4a79c75dd9f6.jpg",
+    "static/media/blog3.png": "/nft/static/media/blog3.6a7875be4dfc12978cda.png",
     "static/media/coming-soon-1.jpg": "/nft/static/media/coming-soon-1.d9670435078c5fdfa6f0.jpg",
     "static/media/coming-soon-10.jpg": "/nft/static/media/coming-soon-10.551573ca3a10cdf2d94d.jpg",
     "static/media/coming-soon-8.jpg": "/nft/static/media/coming-soon-8.17249bf6ebb80e74b8ab.jpg",
@@ -51,11 +54,11 @@
     "static/media/icon4.png": "/nft/static/media/icon4.3094f64e3e0c0f58a345.png",
     "static/media/seller3.png": "/nft/static/media/seller3.5b15672175d585f79182.png",
     "index.html": "/nft/index.html",
-    "main.c83c05c1.css.map": "/nft/static/css/main.c83c05c1.css.map",
-    "main.a72fdb11.js.map": "/nft/static/js/main.a72fdb11.js.map"
+    "main.20b69c7d.css.map": "/nft/static/css/main.20b69c7d.css.map",
+    "main.02b0fbb0.js.map": "/nft/static/js/main.02b0fbb0.js.map"
   },
   "entrypoints": [
-    "static/css/main.c83c05c1.css",
-    "static/js/main.a72fdb11.js"
+    "static/css/main.20b69c7d.css",
+    "static/js/main.02b0fbb0.js"
   ]
 }
