@@ -68,7 +68,7 @@ const Home = (props) => {
           <div className="bid-and-auction">
             <div className="current-bid">
               <p className="title">Current Bid</p>
-              <p className="bid-eth">2.00 ETH<span className="bid-dollar">$6050.90</span></p>
+              <p className="bid-eth">2.00 ETH</p>
             </div>
             <div className="auction">
               <p className="title">Auction ending in</p>

@@ -81,6 +81,8 @@
     text-align: left;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
     margin-top: 50px;
 }
 
@@ -97,12 +99,6 @@
 .hero-container .left .bid-and-auction .current-bid .bid-eth {
     color: #d5f667;
     font-size: 2rem;
-}
-
-.hero-container .left .bid-and-auction .current-bid .bid-dollar {
-    color: #fff;
-    font-size: 1.2rem;
-    margin-left: 30px;
 }
 
 .hero-container .left .bid-and-auction .auction {
