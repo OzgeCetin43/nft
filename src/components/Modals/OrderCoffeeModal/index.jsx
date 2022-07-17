@@ -7,7 +7,7 @@ const OrderCoffeeModal= (props) => {
     return (
         <div className="order-coffee-modal">
             <div className="order-coffee-modal-inner">
-            <i class="ri-close-fill close" onClick={() => props.setBidIsActive(false)}></i>
+            <i class="ri-close-fill close" onClick={() => props.setOrderCoffeeIsActive(false)}></i>
                 <div className="order-left">
                     <img src={coffee} alt="coffee, nft, ethereum, marketplace"/>
                 </div>

@@ -95,7 +95,7 @@ const DetailNft = (props) => {
         buyModalIsActive&& <BuyModal name={nft.name} creator={nft.creator} setBuyIsActive={setBuyModalIsActive}/>
       }
       {
-        orderCoffeeModalIsActive && <OrderCoffeeModal setBidIsActive={setOrderCoffeeModalIsActive}/>
+        orderCoffeeModalIsActive && <OrderCoffeeModal setOrderCoffeeIsActive={setOrderCoffeeModalIsActive}/>
       }
     </div>
   )

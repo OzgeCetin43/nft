@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import { Link } from "react-router-dom";
 import profile from "../../assets/images/creator2.jpg";
 import lion1 from "../../assets/images/lion1.png";
@@ -6,9 +6,12 @@ import lion2 from "../../assets/images/lion2.png";
 import dog1 from "../../assets/images/dog1.png";
 import dog2 from "../../assets/images/dog2.png";
 import "./Profile.css";
+import OrderCoffeeModal from "../../components/Modals/OrderCoffeeModal";
 import Investors from "../../components/Investors";
 
 const Profile = (props) => {
+  const [orderCoffeeModalIsActive, setOrderCoffeeModalIsActive] = useState(false);
+
   return (
     <div className="container">
       <div className="profile-top"/>
@@ -52,6 +55,10 @@ const Profile = (props) => {
           <img src={dog2} alt="nft, marketplace, ethereum" />
         </div>
       </div>
+      <button className="order-btn" onClick={() => setOrderCoffeeModalIsActive(true)}><i class="ri-cup-fill"></i>Order Coffee</button>
+      {
+        orderCoffeeModalIsActive && <OrderCoffeeModal setOrderCoffeeIsActive={setOrderCoffeeModalIsActive}/>
+      }
       <Investors/>
     </div>
   )
